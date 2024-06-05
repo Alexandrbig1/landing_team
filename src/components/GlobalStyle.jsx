@@ -28,7 +28,6 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0 auto;
     scroll-behavior: smooth;
     min-height: 100%;
-    background-color: ${(p) => p.theme.colors.mainBgColor};
     overflow-x: hidden;
   }
 

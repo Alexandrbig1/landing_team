@@ -12,23 +12,31 @@ import {
 import { useTheme } from "../context/ThemeContext";
 
 const Home = lazy(() => import("../pages/Home/Home"));
+const Team = lazy(() => import("../pages/Team/Team"));
+const Projects = lazy(() => import("../pages/Projects/Projects"));
 const NotFound = lazy(() => import("../pages/NotFound/NotFound"));
 
 const theme = {
   light: {
     colors: {
-      mainBgColor: "#cce4ff",
-      mainTextColor: "#f5f5f5",
-      headerTextColor: "#020617",
+      mainBgColor: "#606c38",
+      mainTextColor: "#e7e5e4",
+      secondaryTextColor: "#020617",
+      footerTextColor: "rgba(239, 237, 232, 0.3)",
+      headerTextColor: "#292524",
       headerTextColorLowOp: "rgba(2, 6, 23, 0.1)",
+      headerBgColor: "#f5f5f5",
     },
   },
   dark: {
     colors: {
-      mainBgColor: "#383a3e",
-      mainTextColor: "#020617",
-      headerTextColor: "#f5f5f5",
+      mainBgColor: "#283618",
+      mainTextColor: "#292524",
+      secondaryTextColor: "#f5f5f5",
+      footerTextColor: "rgba(239, 237, 232, 0.3)",
+      headerTextColor: "#e7e5e4",
       headerTextColorLowOp: "rgba(245, 245, 245, 0.1)",
+      headerBgColor: "#f5f5f5",
     },
   },
 };
@@ -46,6 +54,8 @@ function App() {
         }
       >
         <Route index element={<Home />} />
+        <Route path="team" element={<Team />} />
+        <Route path="projects" element={<Projects />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     )

@@ -1,7 +1,7 @@
 {
   "name": "landing_team",
   "author": "Alex Smagin",
-  "description": "Seventh Sence Team Landing Page",
+  "description": "Seventh Sence Team Landing Page - Modern Web Application",
   "license": "MIT",
   "keywords": [
     "Alex Smagin",
@@ -17,7 +17,17 @@
     "Projects",
     "Web Development",
     "Web Applications",
-    "Web Design"
+    "Web Design",
+    "Frontend Development",
+    "React",
+    "React.js",
+    "React Router",
+    "React Icons",
+    "Styled Components",
+    "React Helmet Async",
+    "React Loader Spinner",
+    "Modern Normalize",
+    "Vite"
   ],
   "private": true,
   "version": "1.0.0",
@@ -35,6 +45,7 @@
     "react-helmet-async": "^2.0.5",
     "react-icons": "^5.2.1",
     "react-loader-spinner": "^6.1.6",
+    "react-modal": "^3.16.1",
     "react-router-dom": "^6.23.1",
     "styled-components": "^6.1.11"
   },

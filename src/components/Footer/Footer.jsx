@@ -1,10 +1,22 @@
-import Logo from "../Logo/Logo";
-import { FooterWrapper } from "./Footer.styled";
+import Year from "../Year/Year";
+import {
+  FooterWrapper,
+  MarkWrapper,
+  TradeMark,
+  YearWrapper,
+} from "./Footer.styled";
 
 function Footer() {
   return (
     <FooterWrapper>
-      <Logo />
+      <MarkWrapper>
+        <p>All Rights Reserved</p>
+        <TradeMark />
+      </MarkWrapper>
+      <YearWrapper>
+        <Year />
+        <p>Seventh Sense</p>
+      </YearWrapper>
     </FooterWrapper>
   );
 }

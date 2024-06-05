@@ -1,4 +1,3 @@
-import Footer from "../Footer/Footer";
 import { HeroTitle, HeroWrapper } from "./Hero.styled";
 
 function Hero() {
@@ -7,7 +6,6 @@ function Hero() {
       <HeroWrapper>
         <HeroTitle>Hero</HeroTitle>
       </HeroWrapper>
-      <Footer />
     </div>
   );
 }
