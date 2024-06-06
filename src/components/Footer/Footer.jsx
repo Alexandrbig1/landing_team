@@ -1,5 +1,7 @@
+import SocialIcons from "../SocialIcons/SocialIcons";
 import Year from "../Year/Year";
 import {
+  FooterRightsWrapper,
   FooterWrapper,
   MarkWrapper,
   TradeMark,
@@ -9,14 +11,17 @@ import {
 function Footer() {
   return (
     <FooterWrapper>
-      <MarkWrapper>
-        <p>All Rights Reserved</p>
-        <TradeMark />
-      </MarkWrapper>
-      <YearWrapper>
-        <Year />
-        <p>Seventh Sense</p>
-      </YearWrapper>
+      <FooterRightsWrapper>
+        <MarkWrapper>
+          <p>All Rights Reserved</p>
+          <TradeMark />
+        </MarkWrapper>
+        <YearWrapper>
+          <Year />
+          <p>Seventh Sense</p>
+        </YearWrapper>
+      </FooterRightsWrapper>
+      <SocialIcons />
     </FooterWrapper>
   );
 }

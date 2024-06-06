@@ -7,7 +7,7 @@ export const FooterWrapper = styled.footer`
   padding: 1.2rem;
   width: 100%;
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
   gap: 0.4rem;
   transition: background-color var(--primary-transition);
@@ -20,6 +20,12 @@ export const FooterWrapper = styled.footer`
   font-size: 1.6rem;
   line-height: 1.5;
   color: ${({ theme }) => theme.colors.footerTextColor};
+`;
+
+export const FooterRightsWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
 `;
 
 export const MarkWrapper = styled.div`
