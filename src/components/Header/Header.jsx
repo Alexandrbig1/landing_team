@@ -3,9 +3,8 @@ import ThemeSwitcher from "../ThemeSwitcher/ThemeSwitcher";
 import { FaHome } from "react-icons/fa";
 import { FaPeopleGroup } from "react-icons/fa6";
 import { GrProjects } from "react-icons/gr";
-import { FiSend } from "react-icons/fi";
+import Modal from "../Modal/Modal";
 import {
-  HeaderButton,
   HeaderIcons,
   HeaderItems,
   HeaderLink,
@@ -49,12 +48,7 @@ function Header() {
               </HeaderLink>
             </HeaderItems>
             <HeaderItems>
-              <HeaderButton>
-                <HeaderIcons>
-                  <FiSend />
-                </HeaderIcons>
-                <HeaderText>Contact</HeaderText>
-              </HeaderButton>
+              <Modal />
             </HeaderItems>
           </HeaderMenu>
         </nav>
