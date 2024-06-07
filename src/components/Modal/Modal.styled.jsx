@@ -4,17 +4,16 @@ import Modal from "react-modal";
 export const ModalDiv = styled(Modal)`
   position: absolute;
   top: 50%;
-  left: 50%;
+  right: 2.4rem;
+  transform: translateY(-50%);
   margin: 0 auto;
-  transform: translate(-50%, -50%);
   border-radius: 2rem;
   padding: 1.2rem;
-  max-width: 982px;
-  max-height: 720px;
-  width: 90%;
-  height: 90%;
-  background-color: ${(p) => p.theme.colors.mainBgColor};
-  background-color: aliceblue;
+  max-width: 540px;
+  /* max-height: 540px; */
+  width: 100%;
+  height: 80%;
+  background-color: ${(p) => p.theme.colors.modalColor};
   overflow-y: scroll;
   scroll-behavior: smooth;
   z-index: 200;
