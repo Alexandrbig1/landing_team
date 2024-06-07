@@ -20,6 +20,7 @@ const theme = {
   light: {
     colors: {
       mainBgColor: "#606c38",
+      mainBgColorLowOp: "#606c3830",
       mainTextColor: "#e7e5e4",
       secondaryTextColor: "#020617",
       footerTextColor: "rgba(239, 237, 232, 0.3)",
@@ -32,6 +33,7 @@ const theme = {
   dark: {
     colors: {
       mainBgColor: "#283618",
+      mainBgColorLowOp: "#28361830",
       mainTextColor: "#292524",
       secondaryTextColor: "#f5f5f5",
       footerTextColor: "rgba(239, 237, 232, 0.3)",
