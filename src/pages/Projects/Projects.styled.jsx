@@ -65,8 +65,21 @@ export const ProjectsImage = styled.img`
 export const ProjectsImgWrapper = styled.a`
   width: 65%;
   height: 42rem;
-  overflow: hidden;
-  /* border: 1px solid #f5f5f530; */
+  overflow-x: hidden;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    width: 12px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 12px;
+    background-color: ${(p) => p.theme.colors.thumbColor};
+  }
+  &::-webkit-scrollbar-track {
+    border-radius: 12px;
+    background-color: ${(p) => p.theme.colors.thumbBgColor};
+  }
+
   transition: all var(--primary-transition);
 
   &:hover {
@@ -77,6 +90,6 @@ export const ProjectsImgWrapper = styled.a`
   }
 
   &:hover {
-    padding: 2.4rem 4.8rem;
+    padding: 2.4rem 4.8rem 0;
   }
 `;

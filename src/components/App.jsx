@@ -28,6 +28,8 @@ const theme = {
       headerTextColor: "#e7e5e4",
       headerTextColorLowOp: "rgba(2, 6, 23, 0.1)",
       headerBgColor: "#f5f5f5",
+      thumbBgColor: "#58815730",
+      thumbColor: "#58815750",
     },
   },
   dark: {
@@ -40,6 +42,8 @@ const theme = {
       headerTextColor: "#e7e5e4",
       headerTextColorLowOp: "rgba(245, 245, 245, 0.1)",
       headerBgColor: "#f5f5f5",
+      thumbBgColor: "#58815730",
+      thumbColor: "#58815750",
     },
   },
 };
