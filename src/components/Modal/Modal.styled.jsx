@@ -26,3 +26,9 @@ export const ModalDiv = styled(Modal)`
     padding: 4rem;
   }
 `;
+
+export const Form = styled.form`
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+`;

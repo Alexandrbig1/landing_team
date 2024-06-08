@@ -1,7 +1,16 @@
 import { FiSend } from "react-icons/fi";
 import { HeaderButton, HeaderIcons, HeaderText } from "../Header/Header.styled";
-import { ModalDiv } from "./Modal.styled";
+import { Form, ModalDiv } from "./Modal.styled";
 import { useState } from "react";
+import { useForm } from "react-hook-form";
+import { z } from "zod";
+import { zodResolver } from "@hookform/resolvers/zod";
+
+const schema = z.object({
+  name: z.string().min(1),
+  email: z.string().email(),
+  message: z.string().min(1),
+});
 
 const customStyles = {
   overlay: {
@@ -18,6 +27,11 @@ const customStyles = {
 // eslint-disable-next-line react/prop-types
 function Modal() {
   const [modalIsOpen, setIsOpen] = useState(false);
+  const { register, handleSubmit } = useForm({ resolver: zodResolver(schema) });
+
+  const onSubmit = (data) => {
+    console.log(data);
+  };
 
   function openModal() {
     setIsOpen(true);
@@ -40,7 +54,34 @@ function Modal() {
         style={customStyles}
         contentLabel="Contact Modal Window"
       >
-        open
+        <h2>Let's work together!</h2>
+        <p>
+          You can contact us directly at contact@seventhsense.com or through
+          this form.
+        </p>
+        <Form onSubmit={handleSubmit(onSubmit)}>
+          <input
+            {...register("name")}
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+          />
+          <input
+            {...register("email")}
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your E-mail"
+          />
+          <textarea
+            {...register("message")}
+            id="message"
+            name="message"
+            placeholder="Your Message"
+          />
+          <button type="submit">Send</button>
+        </Form>
       </ModalDiv>
     </>
   );
