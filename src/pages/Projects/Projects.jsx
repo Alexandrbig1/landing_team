@@ -49,6 +49,7 @@ function Projects() {
         pagination={{
           el: ".pagination",
           clickable: true,
+          dynamicBullets: true,
         }}
         mousewheel={false}
         keyboard={true}

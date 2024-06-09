@@ -172,6 +172,7 @@ export const CustomPagination = styled.div`
     background-color: #000000;
     opacity: 1;
   }
+
   .swiper-pagination-bullet-active {
     background-color: ${({ theme }) => theme.colors.mainBgColor};
   }
