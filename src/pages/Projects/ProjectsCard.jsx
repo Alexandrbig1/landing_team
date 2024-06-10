@@ -6,17 +6,28 @@ import {
   ProjectsImgWrapper,
   ProjectsText,
   ProjectsCard,
+  ProjectsCardTitleWrapper,
+  ProjectsCardNumber,
+  ProjectsCardNumberWrapper,
 } from "./Projects.styled";
+import { ProjectsItems, ProjectsMenu } from "./ProjectsCard.styled";
 
 function ProjectsCardItem({ items }) {
   return (
     <ProjectsCardWrapper>
       <ProjectsCard>
-        <ProjectsCardTitle>{items.title}</ProjectsCardTitle>
-        <ProjectsText>{items.description}</ProjectsText>
-        <div>
-          <span>number: {items.number}</span>
-        </div>
+        <ProjectsCardTitleWrapper>
+          <ProjectsCardTitle>{items.title}</ProjectsCardTitle>
+          <ProjectsText>{items.description}</ProjectsText>
+          <ProjectsCardNumberWrapper>
+            <ProjectsCardNumber>{items.number}</ProjectsCardNumber>
+          </ProjectsCardNumberWrapper>
+        </ProjectsCardTitleWrapper>
+        <ProjectsMenu>
+          {items?.stack.map((item, idx) => (
+            <ProjectsItems key={idx}>{item}</ProjectsItems>
+          ))}
+        </ProjectsMenu>
       </ProjectsCard>
       <ProjectsImgWrapper
         href="https://alexandrbig1.github.io/your-energy-fitness-app/"

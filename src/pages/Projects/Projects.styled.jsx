@@ -17,10 +17,9 @@ export const ProjectsContainer = styled.div`
 
 export const ProjectsWrapper = styled.div`
   gap: 2.4rem;
-  z-index: 1000;
+  z-index: 100;
   background-color: ${({ theme }) => theme.colors.mainBgColorLowOp};
   position: relative;
-  background-color: red;
 `;
 
 /* export const ProjectsCardWrapper = styled.li` */
@@ -38,15 +37,38 @@ export const ProjectsCardWrapper = styled.div`
 export const ProjectsCard = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  align-items: center;
+  gap: 2.4rem;
   width: 35%;
   padding: 2.4rem 4.8rem;
 `;
 
 export const ProjectsCardTitleWrapper = styled.div`
   display: flex;
+  flex-direction: column;
   gap: 1.2rem;
-  align-items: end;
+  align-items: center;
+  position: relative;
+`;
+
+export const ProjectsCardNumberWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2rem 2.4rem;
+  border-radius: 50rem;
+  border: 1px solid ${({ theme }) => theme.colors.mainBgColor};
+  position: absolute;
+  top: -2.4rem;
+  left: -2.4rem;
+`;
+
+export const ProjectsCardNumber = styled.h3`
+  color: ${({ theme }) => theme.colors.mainTextColor};
+  font-family: ${primaryFont};
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 1.375;
 `;
 
 export const ProjectsCardTitle = styled.h2`
@@ -138,16 +160,8 @@ export const ProjectsBtn = styled.button`
   color: #fff;
   z-index: 10;
 `;
-export const ProjectsBtnRight = styled.button`
-  background-color: transparent;
-  border: none;
-  outline: none;
-  border-radius: 0.4rem;
-  cursor: pointer;
-  transition: all var(--primary-transition);
-  color: #fff;
-  z-index: 10;
-`;
+
+export const ProjectsBtnRight = styled(ProjectsBtn)``;
 
 export const ProjectsArrowWrapper = styled.div`
   display: flex;
