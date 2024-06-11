@@ -22,7 +22,6 @@ export const ProjectsWrapper = styled.div`
   position: relative;
 `;
 
-/* export const ProjectsCardWrapper = styled.li` */
 export const ProjectsCardWrapper = styled.div`
   display: flex;
   align-items: center;

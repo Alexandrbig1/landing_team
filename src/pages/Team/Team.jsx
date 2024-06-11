@@ -1,3 +1,4 @@
+import teamData from "../../data/team.json";
 import {
   TeamImg,
   TeamImgWrapper,
@@ -11,83 +12,62 @@ import {
   TeamSocialTwitter,
   TeamSocialWeb,
   TeamWrapper,
+  TeamProf,
+  TeamNameWrapper,
 } from "./Team.styled";
 
 function Team() {
   return (
     <TeamWrapper>
-      <TeamImgWrapper>
-        <TeamImg src="/public/images/avatar.jpg" alt="" />
-        <TeamName>Alex Smagin</TeamName>
-        <TeamSocialLinkWeb
-          href="https://www.alexsmagin.dev/"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Visit Alex website"
-        >
-          <TeamSocialWeb />
-        </TeamSocialLinkWeb>
-        <TeamSocialLinkGitHub
-          href="https://github.com/Alexandrbig1"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Visit Alex GitHub profile"
-        >
-          <TeamSocialGitHub />
-        </TeamSocialLinkGitHub>
-        <TeamSocialLinkTwitter
-          href="https://twitter.com/alexsmagin29"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Visit Alex Twitter profile"
-        >
-          <TeamSocialTwitter />
-        </TeamSocialLinkTwitter>
-        <TeamSocialLinkLinkedin
-          href="https://www.linkedin.com/in/alex-smagin29/"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Visit Alex LinkedIn profile"
-        >
-          <TeamSocialLinkedin />
-        </TeamSocialLinkLinkedin>
-      </TeamImgWrapper>
-      <TeamImgWrapper>
-        <TeamImg src="/public/images/avatar.jpg" alt="" />
-        <TeamName>Alexander Smagin</TeamName>
-        <TeamSocialLinkWeb
-          href="https://www.alexsmagin.dev/"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Visit Alex website"
-        >
-          <TeamSocialWeb />
-        </TeamSocialLinkWeb>
-        <TeamSocialLinkGitHub
-          href="https://github.com/Alexandrbig1"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Visit Alex GitHub profile"
-        >
-          <TeamSocialGitHub />
-        </TeamSocialLinkGitHub>
-        <TeamSocialLinkTwitter
-          href="https://twitter.com/alexsmagin29"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Visit Alex Twitter profile"
-        >
-          <TeamSocialTwitter />
-        </TeamSocialLinkTwitter>
-        <TeamSocialLinkLinkedin
-          href="https://www.linkedin.com/in/alex-smagin29/"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Visit Alex LinkedIn profile"
-        >
-          <TeamSocialLinkedin />
-        </TeamSocialLinkLinkedin>
-      </TeamImgWrapper>
+      {teamData.map((item, idx) => (
+        <TeamImgWrapper key={idx}>
+          <TeamImg src={item?.img} alt={item?.name} />
+          <TeamNameWrapper>
+            <TeamName>{item?.name}</TeamName>
+            <TeamProf>{item?.profession}</TeamProf>
+          </TeamNameWrapper>
+          {item?.github && (
+            <TeamSocialLinkGitHub
+              href={item?.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Visit ${item?.name} GitHub profile`}
+            >
+              <TeamSocialGitHub />
+            </TeamSocialLinkGitHub>
+          )}
+          {item?.linkedin && (
+            <TeamSocialLinkLinkedin
+              href={item?.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Visit ${item?.name} LinkedIn profile`}
+            >
+              <TeamSocialLinkedin />
+            </TeamSocialLinkLinkedin>
+          )}
+          {item?.web && (
+            <TeamSocialLinkWeb
+              href={item?.web}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Visit ${item?.name} website`}
+            >
+              <TeamSocialWeb />
+            </TeamSocialLinkWeb>
+          )}
+          {item?.twitter && (
+            <TeamSocialLinkTwitter
+              href={item?.twitter}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Visit ${item?.name} Twitter profile`}
+            >
+              <TeamSocialTwitter />
+            </TeamSocialLinkTwitter>
+          )}
+        </TeamImgWrapper>
+      ))}
     </TeamWrapper>
   );
 }

@@ -11,7 +11,7 @@ export const ProjectsMenu = styled.ul`
 export const ProjectsItems = styled.li`
   list-style: none;
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: 700;
   color: ${({ theme }) => theme.colors.white};
   background-color: ${({ theme }) => theme.colors.mainBgColor};
   padding: 0.2rem 1.2rem;

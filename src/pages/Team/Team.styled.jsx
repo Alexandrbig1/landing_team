@@ -19,17 +19,23 @@ transform: scale(1);
 export const TeamWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
-  gap: 6.4rem;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: auto;
+  max-height: 100vh;
+  overflow: scroll;
+  gap: 3.2rem;
   margin: 0 auto;
   border-radius: 1.2rem;
-  padding: 2.4rem;
-  background-color: ${({ theme }) => theme.colors.mainBgColorLowOp};
+  padding: 2.4rem 1.2rem;
 `;
 
 export const TeamImg = styled.img`
-  width: 22rem;
-  height: 22rem;
+  width: 18rem;
+  height: 18rem;
   border-radius: 100rem;
+  object-fit: cover;
 `;
 
 export const TeamSocialWeb = styled(TbWorldWww)`
@@ -66,12 +72,12 @@ export const TeamSocialLinkWeb = styled.a`
   opacity: 0;
 
   position: absolute;
-  top: -1.2rem;
-  left: -1.2rem;
+  bottom: 6.2rem;
+  left: 0.4rem;
 
   transition: all var(--primary-transition);
   transition: opacity var(--primary-transition);
-  transition-delay: 0.1s;
+  transition-delay: 0.5s;
 
   &:hover {
     cursor: pointer;
@@ -95,11 +101,11 @@ export const TeamSocialLinkGitHub = styled.a`
 
   transition: all var(--primary-transition);
   transition: opacity var(--primary-transition);
-  transition-delay: 0.3s;
+  transition-delay: 0.1s;
 
   position: absolute;
-  top: -1.2rem;
-  right: -1.2rem;
+  top: 0.4rem;
+  left: 0.4rem;
 
   &:hover {
     cursor: pointer;
@@ -123,11 +129,11 @@ export const TeamSocialLinkTwitter = styled.a`
 
   transition: all var(--primary-transition);
   transition: opacity var(--primary-transition);
-  transition-delay: 0.6s;
+  transition-delay: 0.75s;
 
   position: absolute;
-  bottom: 2.4rem;
-  left: -2.4rem;
+  bottom: 6.2rem;
+  right: 0.4rem;
 
   &:hover {
     cursor: pointer;
@@ -150,11 +156,11 @@ export const TeamSocialLinkLinkedin = styled.a`
   opacity: 0;
   transition: all var(--primary-transition);
   transition: opacity var(--primary-transition);
-  transition-delay: 0.8s;
+  transition-delay: 0.3s;
 
   position: absolute;
-  bottom: 2.4rem;
-  right: -2.4rem;
+  top: 0.4rem;
+  right: 0.4rem;
 
   &:hover {
     cursor: pointer;
@@ -166,10 +172,17 @@ export const TeamSocialLinkLinkedin = styled.a`
   }
 `;
 
+export const TeamNameWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+`;
+
 export const TeamName = styled.h3`
   font-family: ${primaryFont};
   font-weight: 700;
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   line-height: 1.14286;
   letter-spacing: -0.02em;
   text-transform: uppercase;
@@ -177,13 +190,26 @@ export const TeamName = styled.h3`
   color: ${({ theme }) => theme.colors.whiteColor};
 `;
 
+export const TeamProf = styled.span`
+  font-family: ${primaryFont};
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: ${({ theme }) => theme.colors.teamSecondaryTextColor};
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-align: center;
+`;
+
 export const TeamImgWrapper = styled.div`
   width: 22rem;
   height: auto;
+  border-radius: 1.2rem;
+  padding: 1.2rem;
+  background-color: ${({ theme }) => theme.colors.mainBgColorLowOp};
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.8rem;
+  gap: 2.4rem;
   position: relative;
 
   &:hover {
