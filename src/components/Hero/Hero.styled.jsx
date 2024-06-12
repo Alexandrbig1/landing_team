@@ -1,5 +1,12 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { primaryFont } from "../fonts";
+import { Link } from "react-router-dom";
+
+const glowing = keyframes`
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+`;
 
 export const HeroWrapper = styled.section`
   /* overflow: hidden; */
@@ -84,10 +91,11 @@ export const HeroImg = styled.img`
   border-radius: 1% 24% 23% 37% / 1% 24% 42% 27%;
 `;
 
-export const HeroBtn = styled.button`
-  outline: none;
-  background: none;
+export const HeroBtn = styled(Link)`
+  position: relative;
   border: none;
+  background: none;
+  outline: none;
   padding: 1.2rem;
   border-radius: 1.2rem;
   width: 100%;
@@ -95,10 +103,40 @@ export const HeroBtn = styled.button`
   background-color: ${(p) => p.theme.colors.mainBgColor};
   color: ${(p) => p.theme.colors.whiteColor};
   text-transform: uppercase;
+  text-align: center;
 
   font-family: ${primaryFont};
   font-weight: 600;
   font-size: 1.6rem;
   line-height: 1.2;
   letter-spacing: -0.02em;
+
+  &::before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      ${(p) => p.theme.colors.whiteColorLowOp},
+      transparent,
+      ${(p) => p.theme.colors.whiteColorLowOp},
+      transparent,
+      ${(p) => p.theme.colors.whiteColorLowOp},
+      transparent,
+      ${(p) => p.theme.colors.whiteColorLowOp}
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(4px);
+    animation: ${glowing} 40s linear infinite;
+    transition: all 0.3s ease-in-out;
+    border-radius: inherit;
+    opacity: 1;
+  }
+
+  &:hover:before {
+    animation-play-state: paused;
+  }
 `;

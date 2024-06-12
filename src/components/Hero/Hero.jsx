@@ -18,7 +18,7 @@ function Hero() {
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui,
             perferendis.
           </HeroText>
-          <HeroBtn>our projects</HeroBtn>
+          <HeroBtn to="projects">our projects</HeroBtn>
         </HeroTitleWrapper>
         <HeroImgWrapper>
           <picture>
