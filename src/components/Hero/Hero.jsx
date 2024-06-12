@@ -1,13 +1,30 @@
-import { HeroImg, HeroTitle, HeroWrapper } from "./Hero.styled";
+import {
+  HeroBtn,
+  HeroImg,
+  HeroImgWrapper,
+  HeroText,
+  HeroTitle,
+  HeroTitleWrapper,
+  HeroWrapper,
+} from "./Hero.styled";
 
 function Hero() {
   return (
     <div>
       <HeroWrapper>
-        <HeroTitle>Hero</HeroTitle>
-        <HeroImg>
-          <picture></picture>
-        </HeroImg>
+        <HeroTitleWrapper>
+          <HeroTitle>Seventh Sense</HeroTitle>
+          <HeroText>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui,
+            perferendis.
+          </HeroText>
+          <HeroBtn>our projects</HeroBtn>
+        </HeroTitleWrapper>
+        <HeroImgWrapper>
+          <picture>
+            <HeroImg src="/public/images/hero_desktop.jpg" alt="" />
+          </picture>
+        </HeroImgWrapper>
       </HeroWrapper>
     </div>
   );
