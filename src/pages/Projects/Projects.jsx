@@ -5,6 +5,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import ProjectsCardItem from "./ProjectsCard";
 import projectsData from "../../data/projects.json";
+import { motion } from "framer-motion";
 import {
   CustomPagination,
   PaginationWrapper,
