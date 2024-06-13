@@ -1,6 +1,16 @@
 import { FiSend } from "react-icons/fi";
 import { HeaderButton, HeaderIcons, HeaderText } from "../Header/Header.styled";
-import { Form, ModalDiv } from "./Modal.styled";
+import {
+  Form,
+  ModalBtn,
+  ModalDiv,
+  ModalInput,
+  ModalText,
+  ModalTextArea,
+  ModalTextLink,
+  ModalTitle,
+  ModalTitleWrapper,
+} from "./Modal.styled";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -54,33 +64,37 @@ function Modal() {
         style={customStyles}
         contentLabel="Contact Modal Window"
       >
-        <h2>Let's work together!</h2>
-        <p>
-          You can contact us directly at contact@seventhsense.com or through
-          this form.
-        </p>
+        <ModalTitleWrapper>
+          <ModalTitle>Let's work together!</ModalTitle>
+          <ModalText>
+            You can contact us directly at{" "}
+            <ModalTextLink href="#">contact@seventhsense.com</ModalTextLink> or
+            through this form.
+          </ModalText>
+        </ModalTitleWrapper>
         <Form onSubmit={handleSubmit(onSubmit)}>
-          <input
+          <ModalInput
             {...register("name")}
             type="text"
             id="name"
             name="name"
             placeholder="Your Name"
           />
-          <input
+          <ModalInput
             {...register("email")}
             type="email"
             id="email"
             name="email"
             placeholder="Your E-mail"
           />
-          <textarea
+          <ModalTextArea
             {...register("message")}
             id="message"
             name="message"
             placeholder="Your Message"
+            rows="5"
           />
-          <button type="submit">Send</button>
+          <ModalBtn type="submit">Send</ModalBtn>
         </Form>
       </ModalDiv>
     </>

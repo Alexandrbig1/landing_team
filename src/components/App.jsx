@@ -34,6 +34,7 @@ const theme = {
       thumbBgColor: "#58815730",
       thumbColor: "#58815750",
       modalColor: "#333d29",
+      greyColor: "#7f7f7f",
     },
   },
   dark: {
@@ -52,6 +53,7 @@ const theme = {
       thumbBgColor: "#58815730",
       thumbColor: "#58815750",
       modalColor: "#333d29",
+      greyColor: "#7f7f7f",
     },
   },
 };

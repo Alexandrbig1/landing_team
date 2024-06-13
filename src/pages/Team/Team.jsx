@@ -1,5 +1,5 @@
 import teamData from "../../data/team.json";
-import { delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import {
   TeamImg,
   TeamImgWrapper,
@@ -23,9 +23,9 @@ function Team() {
       {teamData.map((item, idx) => (
         <motion.div
           key={idx}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.5 + idx * 0.3 }}
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ type: "spring", duration: 0.5, delay: 0.5 + idx * 0.3 }}
         >
           <TeamImgWrapper>
             <TeamImg src={item?.img} alt={item?.name} />
