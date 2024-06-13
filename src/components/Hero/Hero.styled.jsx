@@ -1,6 +1,9 @@
 import styled, { keyframes } from "styled-components";
 import { primaryFont } from "../fonts";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { FaRegLightbulb } from "react-icons/fa6";
+import { PiSparkleLight } from "react-icons/pi";
 
 const glowing = keyframes`
   0% { background-position: 0 0; }
@@ -10,12 +13,12 @@ const glowing = keyframes`
 
 export const HeroWrapper = styled.section`
   /* overflow: hidden; */
-  width: 80%;
+  width: 85%;
   height: 80%;
   /* max-width: 38.5rem; */
   /* max-height: 100vh; */
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1.25fr 1.75fr;
   justify-items: center;
   margin: 0 auto;
   gap: 7.2rem;
@@ -36,6 +39,31 @@ export const HeroWrapper = styled.section`
   }
 `;
 
+export const GlitchText = styled(motion.h1)`
+  font-size: 8.2rem;
+  color: ${({ theme }) => theme.colors.mainTextColor};
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+  -webkit-text-stroke-color: #e7e5e490;
+  line-height: 0.78;
+  text-transform: uppercase;
+  position: relative;
+  transition: all var(--primary-transition);
+  position: relative;
+`;
+
+export const HeroTitleIcon = styled(motion.span)`
+  color: #f5f5f540;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: rotate(180deg);
+`;
+
+export const HeroTitleBulb = styled(FaRegLightbulb)`
+  font-size: 6.4rem;
+`;
+
 export const HeroTitleWrapper = styled.div`
   width: 100%;
   display: flex;
@@ -47,25 +75,6 @@ export const HeroTitleWrapper = styled.div`
   padding: 2.4rem;
   border-radius: 1.2rem;
   position: relative;
-`;
-
-export const HeroTitle = styled.h1`
-  font-size: 8.2rem;
-  /* text-align: end; */
-  color: ${({ theme }) => theme.colors.mainTextColor};
-  /* text-shadow: 0 0 10px ${({ theme }) => theme.colors.mainTextColor}; */
-  /* font-weight: bold; */
-  color: transparent;
-  -webkit-text-stroke: 2px #000;
-  -webkit-text-stroke-color: #e7e5e490;
-  transition: color 0.3s ease-in-out;
-  line-height: 0.78;
-  text-transform: uppercase;
-
-  /* position: absolute;
-  top: 1.2rem;
-  left: 50%;
-  transform: translateX(-50%); */
 `;
 
 export const HeroText = styled.p`
@@ -104,6 +113,10 @@ export const HeroBtn = styled(Link)`
   color: ${(p) => p.theme.colors.whiteColor};
   text-transform: uppercase;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
 
   font-family: ${primaryFont};
   font-weight: 600;
@@ -139,4 +152,9 @@ export const HeroBtn = styled(Link)`
   &:hover:before {
     animation-play-state: paused;
   }
+`;
+
+export const HeroBtnIcon = styled(PiSparkleLight)`
+  font-size: 2.4rem;
+  color: ${(p) => p.theme.colors.whiteColor};
 `;
