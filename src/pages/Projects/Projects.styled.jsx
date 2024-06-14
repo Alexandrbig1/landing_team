@@ -63,7 +63,7 @@ export const ProjectsCardNumberWrapper = styled.div`
 `;
 
 export const ProjectsCardNumber = styled.h3`
-  color: ${({ theme }) => theme.colors.mainTextColor};
+  color: ${({ theme }) => theme.colors.whiteColor};
   font-family: ${primaryFont};
   font-weight: 700;
   font-size: 2.4rem;
@@ -71,7 +71,7 @@ export const ProjectsCardNumber = styled.h3`
 `;
 
 export const ProjectsCardTitle = styled.h2`
-  color: ${({ theme }) => theme.colors.mainTextColor};
+  color: ${({ theme }) => theme.colors.whiteColor};
   font-family: ${primaryFont};
   font-weight: 700;
   font-size: 32px;
@@ -80,7 +80,7 @@ export const ProjectsCardTitle = styled.h2`
 `;
 
 export const ProjectsText = styled.p`
-  color: ${({ theme }) => theme.colors.mainTextColor};
+  color: ${({ theme }) => theme.colors.whiteColor};
   font-family: ${primaryFont};
   font-size: 1.4rem;
   line-height: 1.5;

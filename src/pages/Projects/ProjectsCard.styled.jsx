@@ -12,7 +12,7 @@ export const ProjectsItems = styled.li`
   list-style: none;
   font-size: 1.4rem;
   font-weight: 700;
-  color: ${({ theme }) => theme.colors.white};
+  color: ${({ theme }) => theme.colors.whiteColor};
   background-color: ${({ theme }) => theme.colors.mainBgColor};
   padding: 0.2rem 1.2rem;
   border-radius: 20rem;

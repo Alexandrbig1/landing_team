@@ -41,7 +41,6 @@ export const HeroWrapper = styled.section`
 
 export const GlitchText = styled(motion.h1)`
   font-size: 8.2rem;
-  color: ${({ theme }) => theme.colors.mainTextColor};
   color: transparent;
   -webkit-text-stroke: 1px #fff;
   -webkit-text-stroke-color: #e7e5e490;
@@ -78,7 +77,12 @@ export const HeroTitleWrapper = styled.div`
 `;
 
 export const HeroText = styled.p`
-  /* text-align: end; */
+  font-family: ${primaryFont};
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.3444;
+  letter-spacing: -0.02em;
+  color: ${({ theme }) => theme.colors.whiteColor};
 `;
 
 export const HeroImgWrapper = styled.div`

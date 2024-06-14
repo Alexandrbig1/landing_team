@@ -4,6 +4,7 @@ import { FaHome } from "react-icons/fa";
 import { FaPeopleGroup } from "react-icons/fa6";
 import { GrProjects } from "react-icons/gr";
 import Modal from "../Modal/Modal";
+import { motion } from "framer-motion";
 import {
   HeaderIcons,
   HeaderItems,
@@ -24,35 +25,65 @@ function Header() {
         <nav>
           <HeaderMenu>
             <HeaderItems>
-              <HeaderLink to="/" end>
-                <HeaderIcons>
-                  <FaHome />
-                </HeaderIcons>
-                <HeaderText>Home</HeaderText>
-              </HeaderLink>
+              <motion.div
+                initial={{ opacity: 0, y: -100 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ type: "spring", delay: 0.25 }}
+              >
+                <HeaderLink to="/" end>
+                  <HeaderIcons>
+                    <FaHome />
+                  </HeaderIcons>
+                  <HeaderText>Home</HeaderText>
+                </HeaderLink>
+              </motion.div>
             </HeaderItems>
             <HeaderItems>
-              <HeaderLink to="team" end>
-                <HeaderIcons>
-                  <FaPeopleGroup />
-                </HeaderIcons>
-                <HeaderText>Team</HeaderText>
-              </HeaderLink>
+              <motion.div
+                initial={{ opacity: 0, y: -100 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ type: "spring", delay: 0.5 }}
+              >
+                <HeaderLink to="team" end>
+                  <HeaderIcons>
+                    <FaPeopleGroup />
+                  </HeaderIcons>
+                  <HeaderText>Team</HeaderText>
+                </HeaderLink>
+              </motion.div>
             </HeaderItems>
             <HeaderItems>
-              <HeaderLink to="projects" end>
-                <HeaderIcons>
-                  <GrProjects />
-                </HeaderIcons>
-                <HeaderText>Projects</HeaderText>
-              </HeaderLink>
+              <motion.div
+                initial={{ opacity: 0, y: -100 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ type: "spring", delay: 0.75 }}
+              >
+                <HeaderLink to="projects" end>
+                  <HeaderIcons>
+                    <GrProjects />
+                  </HeaderIcons>
+                  <HeaderText>Projects</HeaderText>
+                </HeaderLink>
+              </motion.div>
             </HeaderItems>
             <HeaderItems>
-              <Modal />
+              <motion.div
+                initial={{ opacity: 0, y: -100 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ type: "spring", delay: 1 }}
+              >
+                <Modal />
+              </motion.div>
             </HeaderItems>
           </HeaderMenu>
         </nav>
-        <ThemeSwitcher />
+        <motion.div
+          initial={{ opacity: 0, y: -100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ type: "spring", delay: 1.25 }}
+        >
+          <ThemeSwitcher />
+        </motion.div>
       </HeaderMenuWrapper>
       {/* <ThemeSwitcher toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} /> */}
     </HeaderWrapper>
