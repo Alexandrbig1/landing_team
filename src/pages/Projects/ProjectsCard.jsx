@@ -30,7 +30,7 @@ function ProjectsCardItem({ items }) {
         </ProjectsMenu>
       </ProjectsCard>
       <ProjectsImgWrapper
-        href="https://alexandrbig1.github.io/your-energy-fitness-app/"
+        href={items.url}
         target="_blank"
         rel="noopener noreferrer"
       >

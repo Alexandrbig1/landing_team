@@ -2,6 +2,7 @@
   {
     "number": 1,
     "title": "Your Energy",
+    "url": "https://alexandrbig1.github.io/your-energy-fitness-app/",
     "description": "'Your Energy' is a fitness project by the Seventh Sense team aimed at helping you achieve your health goals. Using HTML, CSS, JavaScript, Firebase, Axios, BasicLightbox, and iziToast, this platform offers workout plans, exercise demos, and personalized nutrition advice to support your fitness journey.  ",
     "stack": ["HTML", "CSS", "JavaScript", "Firebase", "Axios"],
     "img": "/public/images/fit.jpg"
@@ -9,6 +10,7 @@
   {
     "number": 2,
     "title": "Foodies",
+    "url": "https://foodies-recipes-project.netlify.app/",
     "description": "'Foodies' is a food blog by the Seventh Sense team, built with HTML, CSS, and JavaScript. Using React for the frontend and Node.js with Express for the backend, MongoDB handles our data. 'Foodies' inspires culinary exploration for both seasoned chefs and novice cooks.",
     "stack": [
       "HTML",
@@ -19,6 +21,6 @@
       "MongoDB",
       "Express"
     ],
-    "img": "/public/images/fit.jpg"
+    "img": "/public/images/foodies.jpg"
   }
 ]
