@@ -34,7 +34,7 @@
     "linkedin": "https://www.linkedin.com/in/yuriy-staynov-8a2832219/",
     "github": "https://github.com/Yuriy-St",
     "profession": "Fullstack Developer",
-    "img": "https://imagedelivery.net/mt3p7ofMGq4rq6eZNqRFdw/449e49ff-9bcf-4312-e830-414b39df7900/public"
+    "img": "/public/images/team/yuriy.jpg"
   },
   {
     "name": "Galamaga Yevgen",
@@ -55,7 +55,7 @@
     "linkedin": "https://www.linkedin.com/in/ilyabondarchuk/",
     "github": "https://github.com/cod3provider",
     "profession": "Fullstack Developer",
-    "img": "https://i.imgur.com/xmyjNiC.jpg"
+    "img": "/public/images/team/ilya.jpg"
   },
   {
     "name": "Vladyslav Mykhalytsky",

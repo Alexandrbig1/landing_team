@@ -14,6 +14,7 @@ import {
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
+import { toast } from "react-toastify";
 import { zodResolver } from "@hookform/resolvers/zod";
 
 const schema = z.object({
@@ -37,10 +38,28 @@ const customStyles = {
 // eslint-disable-next-line react/prop-types
 function Modal() {
   const [modalIsOpen, setIsOpen] = useState(false);
-  const { register, handleSubmit } = useForm({ resolver: zodResolver(schema) });
+  const { register, handleSubmit, reset } = useForm({
+    resolver: zodResolver(schema),
+  });
 
   const onSubmit = (data) => {
-    console.log(data);
+    toast.success(
+      "Thank you for your message! We will get back to you shortly."
+    );
+    reset();
+  };
+  const onError = (errors) => {
+    if (errors.name) {
+      toast.error("Name is required. Please enter your name.");
+    } else if (errors.email) {
+      toast.error("Invalid email address. Please enter a valid email.");
+    } else if (errors.message) {
+      toast.error("Message is required. Please enter your message.");
+    } else {
+      toast.error(
+        "There was an error submitting the form. Please check your inputs."
+      );
+    }
   };
 
   function openModal() {
@@ -68,29 +87,28 @@ function Modal() {
           <ModalTitle>Let's work together!</ModalTitle>
           <ModalText>
             You can contact us directly at{" "}
-            <ModalTextLink href="#">contact@seventhsense.com</ModalTextLink> or
-            through this form.
+            <ModalTextLink href="mailto:contact@seventhsense.com">
+              contact@seventhsense.com
+            </ModalTextLink>{" "}
+            or through this form.
           </ModalText>
         </ModalTitleWrapper>
-        <Form onSubmit={handleSubmit(onSubmit)}>
+        <Form onSubmit={handleSubmit(onSubmit, onError)}>
           <ModalInput
             {...register("name")}
             type="text"
             id="name"
-            name="name"
             placeholder="Your Name"
           />
           <ModalInput
             {...register("email")}
             type="email"
             id="email"
-            name="email"
             placeholder="Your E-mail"
           />
           <ModalTextArea
             {...register("message")}
             id="message"
-            name="message"
             placeholder="Your Message"
             rows="5"
           />

@@ -89,21 +89,17 @@ export const ProjectsText = styled.p`
 export const ProjectsImage = styled.img`
   width: 100%;
   height: auto;
-  /* transform: rotate(9deg); */
   object-fit: cover;
   background-position: top;
   background-repeat: no-repeat;
-  /* background-size: cover; */
   transition: all var(--primary-transition);
-
-  /* border-radius: 71% 29% 21% 79% / 58% 67% 33% 42%; */
 `;
 
 export const ProjectsImgWrapper = styled.a`
   width: 65%;
   height: 42rem;
-  /* overflow-x: hidden; */
   overflow-y: scroll;
+  overflow-x: hidden;
 
   &::-webkit-scrollbar {
     width: 12px;

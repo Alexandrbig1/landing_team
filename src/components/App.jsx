@@ -3,13 +3,15 @@ import FontsHelmet from "./FontsHelmet";
 import { GlobalStyle } from "./GlobalStyle";
 import { lazy } from "react";
 import RootLayout from "../layouts/RootLayout";
+import { useTheme } from "../context/ThemeContext";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import {
   Route,
   RouterProvider,
   createBrowserRouter,
   createRoutesFromElements,
 } from "react-router-dom";
-import { useTheme } from "../context/ThemeContext";
 
 const Home = lazy(() => import("../pages/Home/Home"));
 const Team = lazy(() => import("../pages/Team/Team"));
@@ -20,6 +22,7 @@ const theme = {
   light: {
     colors: {
       mainBgColor: "#606c38",
+      accentColor: "#283618",
       mainBgColorLowOp: "#606c3830",
       mainTextColor: "#e7e5e4",
       secondaryTextColor: "#020617",
@@ -40,6 +43,7 @@ const theme = {
   dark: {
     colors: {
       mainBgColor: "#283618",
+      accentColor: "#283618",
       mainBgColorLowOp: "#28361830",
       mainTextColor: "#292524",
       secondaryTextColor: "#f5f5f5",
@@ -82,6 +86,7 @@ function App() {
     <ThemeProvider theme={isDarkTheme ? theme.dark : theme.light}>
       <GlobalStyle />
       <FontsHelmet />
+      <ToastContainer />
       <RouterProvider router={router} />
     </ThemeProvider>
   );
