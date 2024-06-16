@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Modal from "react-modal";
 import { primaryFont } from "../fonts";
+import { IoMdClose } from "react-icons/io";
 
 export const ModalDiv = styled(Modal)`
   position: absolute;
@@ -123,4 +124,18 @@ export const ModalBtn = styled.button`
   background-color: ${(p) => p.theme.colors.whiteColor};
   cursor: pointer;
   color: #292524;
+`;
+
+export const CloseModal = styled(IoMdClose)`
+  color: ${(p) => p.theme.colors.accentLightColor};
+  font-size: 2.4rem;
+  top: 1.6rem;
+  right: 1.6rem;
+  position: absolute;
+  cursor: pointer;
+  transition: 0.3s linear;
+
+  &:hover {
+    transform: rotate(90deg);
+  }
 `;

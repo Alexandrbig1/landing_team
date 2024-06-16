@@ -24,8 +24,8 @@ function Header() {
     <HeaderWrapper>
       <Logo />
       <HeaderMenuWrapper>
-        <HeaderMenu>
-          <ul>
+        <nav>
+          <HeaderMenu>
             <HeaderItems>
               <motion.div
                 initial={{ opacity: 0, y: -100 }}
@@ -77,8 +77,8 @@ function Header() {
                 <Modal />
               </motion.div>
             </HeaderItems>
-          </ul>
-        </HeaderMenu>
+          </HeaderMenu>
+        </nav>
         <motion.div
           initial={{ opacity: 0, y: -100 }}
           animate={{ opacity: 1, y: 0 }}

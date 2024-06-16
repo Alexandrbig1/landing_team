@@ -3,6 +3,7 @@ import { z } from "zod";
 import { toast } from "react-toastify";
 import { zodResolver } from "@hookform/resolvers/zod";
 import {
+  CloseModal,
   Form,
   ModalBtn,
   ModalDiv,
@@ -69,6 +70,7 @@ function ModalWindow({ modalIsOpen, setIsOpen }) {
       style={customStyles}
       contentLabel="Contact Modal Window"
     >
+      <CloseModal onClick={closeModal} />
       <ModalTitleWrapper>
         <ModalTitle>Let's work together!</ModalTitle>
         <ModalText>

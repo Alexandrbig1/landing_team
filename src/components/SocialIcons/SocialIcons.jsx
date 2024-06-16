@@ -6,7 +6,8 @@ import {
   WoolfImg,
 } from "./SocialIcons.styled";
 
-function SocialIcons() {
+// eslint-disable-next-line react/prop-types
+function SocialIcons({ color }) {
   return (
     <SocialLinksWrapper>
       <motion.div
@@ -20,7 +21,7 @@ function SocialIcons() {
           rel="noopener noreferrer"
           aria-label="Join Alex Smagin's Discord server"
         >
-          <DiscordIcon />
+          <DiscordIcon $color={color} />
         </Link>
       </motion.div>
       <motion.div

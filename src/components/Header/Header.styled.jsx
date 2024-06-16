@@ -78,7 +78,7 @@ export const HeaderText = styled.span`
 
   transition: all var(--primary-transition);
 
-  transform: scale(0);
+  transform: ${(p) => (p?.onlyText ? "scale(1)" : "scale(0)")};
   transition-delay: 0s;
 `;
 

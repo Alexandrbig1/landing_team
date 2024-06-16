@@ -14,7 +14,7 @@ export const Link = styled.a`
 `;
 
 export const DiscordIcon = styled(BsDiscord)`
-  color: ${(p) => p.theme.colors.headerTextColor};
+  color: ${(p) => (p && p.$color ? p.$color : p.theme.colors.headerTextColor)};
   font-size: 3.6rem;
   transition: color 0.2s linear;
   padding: 0.6rem;

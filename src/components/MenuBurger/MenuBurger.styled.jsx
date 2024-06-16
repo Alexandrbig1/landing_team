@@ -108,7 +108,7 @@ export const MenuBurgerText = styled(NavLink)`
   font-size: 1.4rem;
   font-weight: 400;
   font-family: ${primaryFont};
-  color: ${({ theme }) => theme.colors.headerTextColor};
+  color: ${({ theme }) => theme.colors.mainTextColorRev};
   line-height: 1.28571;
 
   &.active {

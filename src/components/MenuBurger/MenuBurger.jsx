@@ -35,10 +35,13 @@ export default function MenuBurger() {
                 Projects
               </MenuBurgerText>
             </li>
+            <li onClick={toggleMenu}>
+              <Modal onlyText={true} />
+            </li>
           </BurgerMenuItems>
         </nav>
         <BurgerLogoWrapper>
-          <SocialIcons />
+          <SocialIcons color="#7289d9" />
         </BurgerLogoWrapper>
       </BurgerContainer>
     </Menu>
