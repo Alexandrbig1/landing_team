@@ -1,4 +1,9 @@
 import { FiSend } from "react-icons/fi";
+import { useState } from "react";
+import { useForm } from "react-hook-form";
+import { z } from "zod";
+import { toast } from "react-toastify";
+import { zodResolver } from "@hookform/resolvers/zod";
 import { HeaderButton, HeaderIcons, HeaderText } from "../Header/Header.styled";
 import {
   Form,
@@ -11,11 +16,6 @@ import {
   ModalTitle,
   ModalTitleWrapper,
 } from "./Modal.styled";
-import { useState } from "react";
-import { useForm } from "react-hook-form";
-import { z } from "zod";
-import { toast } from "react-toastify";
-import { zodResolver } from "@hookform/resolvers/zod";
 
 const schema = z.object({
   name: z.string().min(1),
