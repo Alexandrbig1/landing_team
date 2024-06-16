@@ -3,7 +3,7 @@ import { Outlet } from "react-router";
 import Loader from "../components/Loader/Loader";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
-import { Container, Main } from "../components/layout";
+import { Main } from "../components/layout";
 import MenuBurger from "../components/MenuBurger/MenuBurger";
 
 // eslint-disable-next-line react/prop-types

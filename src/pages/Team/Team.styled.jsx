@@ -16,7 +16,7 @@ transform: scale(1);
   }
 `;
 
-export const TeamWrapper = styled.div`
+export const TeamWrapper = styled.section`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

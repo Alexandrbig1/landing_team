@@ -5,7 +5,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import ProjectsCardItem from "./ProjectsCard";
 import projectsData from "../../data/projects.json";
-import { motion } from "framer-motion";
+import { Container } from "../../components/layout";
 import {
   CustomPagination,
   PaginationWrapper,
@@ -19,41 +19,43 @@ import {
 
 function Projects() {
   return (
-    <ProjectsContainer>
-      <Swiper
-        spaceBetween={30}
-        slidesPerView={1}
-        navigation={{
-          nextEl: ".next",
-          prevEl: ".prev",
-        }}
-        pagination={{
-          el: ".pagination",
-          clickable: true,
-          dynamicBullets: true,
-        }}
-        mousewheel={false}
-        keyboard={true}
-        modules={[Navigation, Pagination, Keyboard]}
-      >
-        {projectsData.map((item, idx) => (
-          <SwiperSlide key={idx}>
-            <ProjectsCardItem items={item} />
-          </SwiperSlide>
-        ))}
-        <PaginationWrapper>
-          <ProjectsArrowWrapper>
-            <ProjectsBtn className="prev">
-              <ProjectsArrowLeft />
-            </ProjectsBtn>
-            <ProjectsBtnRight className="next">
-              <ProjectsArrowRight />
-            </ProjectsBtnRight>
-          </ProjectsArrowWrapper>
-          <CustomPagination className="pagination" />
-        </PaginationWrapper>
-      </Swiper>
-    </ProjectsContainer>
+    <Container>
+      <ProjectsContainer>
+        <Swiper
+          spaceBetween={30}
+          slidesPerView={1}
+          navigation={{
+            nextEl: ".next",
+            prevEl: ".prev",
+          }}
+          pagination={{
+            el: ".pagination",
+            clickable: true,
+            dynamicBullets: true,
+          }}
+          mousewheel={false}
+          keyboard={true}
+          modules={[Navigation, Pagination, Keyboard]}
+        >
+          {projectsData.map((item, idx) => (
+            <SwiperSlide key={idx}>
+              <ProjectsCardItem items={item} />
+            </SwiperSlide>
+          ))}
+          <PaginationWrapper>
+            <ProjectsArrowWrapper>
+              <ProjectsBtn className="prev">
+                <ProjectsArrowLeft />
+              </ProjectsBtn>
+              <ProjectsBtnRight className="next">
+                <ProjectsArrowRight />
+              </ProjectsBtnRight>
+            </ProjectsArrowWrapper>
+            <CustomPagination className="pagination" />
+          </PaginationWrapper>
+        </Swiper>
+      </ProjectsContainer>
+    </Container>
   );
 }
 

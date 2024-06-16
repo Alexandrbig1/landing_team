@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { toast } from "react-toastify";
@@ -39,7 +40,8 @@ function ModalWindow({ modalIsOpen, setIsOpen }) {
     resolver: zodResolver(schema),
   });
 
-  const onSubmit = (data) => {
+  // const onSubmit = (data) => {
+  const onSubmit = () => {
     toast.success(
       "Thank you for your message! We will get back to you shortly."
     );

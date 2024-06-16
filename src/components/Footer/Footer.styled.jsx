@@ -42,3 +42,12 @@ export const TradeMark = styled(PiTrademarkRegisteredFill)`
   color: ${({ theme }) => theme.colors.footerTextColor};
   font-size: 1.6rem;
 `;
+
+export const FooterText = styled.p`
+  font-family: ${primaryFont};
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.3444;
+  letter-spacing: -0.02em;
+  color: ${({ theme }) => theme.colors.footerTextColor};
+`;

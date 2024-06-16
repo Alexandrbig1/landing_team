@@ -11,6 +11,21 @@ const glowing = keyframes`
   100% { background-position: 0 0; }
 `;
 
+export const HeroContainer = styled.div`
+  width: 100%;
+  max-width: 375px;
+  position: relative;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    max-width: 768px;
+  }
+
+  @media (min-width: 1440px) {
+    max-width: 1440px;
+  }
+`;
+
 export const HeroWrapper = styled.section`
   /* overflow: hidden; */
   width: 85%;

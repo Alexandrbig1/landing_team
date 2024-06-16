@@ -13,7 +13,7 @@ export const ProjectsContainer = styled.section`
   border-radius: 1.2rem;
   width: 80%;
   height: 42rem;
-  overflow: hidden;
+  /* overflow: hidden; */
 `;
 
 export const ProjectsWrapper = styled.div`

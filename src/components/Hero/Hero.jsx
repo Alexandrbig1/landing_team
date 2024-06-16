@@ -3,6 +3,7 @@ import {
   GlitchText,
   HeroBtn,
   HeroBtnIcon,
+  HeroContainer,
   HeroImg,
   HeroImgWrapper,
   HeroText,
@@ -11,6 +12,7 @@ import {
   HeroTitleWrapper,
   HeroWrapper,
 } from "./Hero.styled";
+import { Container } from "../layout";
 
 const glitchAnimation = {
   initial: {},
@@ -55,7 +57,7 @@ const glitchAnimation = {
 
 function Hero() {
   return (
-    <div>
+    <Container>
       <HeroWrapper>
         <motion.div
           initial={{ opacity: 0, y: 100 }}
@@ -103,7 +105,7 @@ function Hero() {
           </HeroImgWrapper>
         </motion.div>
       </HeroWrapper>
-    </div>
+    </Container>
   );
 }
 
