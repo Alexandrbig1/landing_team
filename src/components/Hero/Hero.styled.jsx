@@ -17,9 +17,8 @@ export const HeroWrapper = styled.section`
   height: 80%;
   /* max-width: 38.5rem; */
   /* max-height: 100vh; */
-  display: grid;
-  grid-template-columns: 1.25fr 1.75fr;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
   gap: 7.2rem;
   /* background-color: ${(p) => p.theme.colors.mainBgColorLowOp}; */
@@ -36,6 +35,9 @@ export const HeroWrapper = styled.section`
 
   @media (min-width: 1400px) {
     /* max-width: 140rem; */
+    display: grid;
+    grid-template-columns: 1.25fr 1.75fr;
+    justify-items: center;
   }
 `;
 

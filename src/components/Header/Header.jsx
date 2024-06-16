@@ -4,8 +4,10 @@ import { FaHome } from "react-icons/fa";
 import { FaPeopleGroup } from "react-icons/fa6";
 import { GrProjects } from "react-icons/gr";
 import Modal from "../Modal/Modal";
+import MenuBurgerIcon from "../MenuBurger/MenuBurgerIcon";
 import { motion } from "framer-motion";
 import {
+  BurgerWrapper,
   HeaderIcons,
   HeaderItems,
   HeaderLink,
@@ -22,8 +24,8 @@ function Header() {
     <HeaderWrapper>
       <Logo />
       <HeaderMenuWrapper>
-        <nav>
-          <HeaderMenu>
+        <HeaderMenu>
+          <ul>
             <HeaderItems>
               <motion.div
                 initial={{ opacity: 0, y: -100 }}
@@ -75,14 +77,17 @@ function Header() {
                 <Modal />
               </motion.div>
             </HeaderItems>
-          </HeaderMenu>
-        </nav>
+          </ul>
+        </HeaderMenu>
         <motion.div
           initial={{ opacity: 0, y: -100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ type: "spring", delay: 1.25 }}
         >
-          <ThemeSwitcher />
+          <BurgerWrapper>
+            <ThemeSwitcher />
+            <MenuBurgerIcon />
+          </BurgerWrapper>
         </motion.div>
       </HeaderMenuWrapper>
       {/* <ThemeSwitcher toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} /> */}

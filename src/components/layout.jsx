@@ -9,7 +9,6 @@ export const Container = styled.div`
   max-width: 375px;
   position: relative;
   margin: 0 auto;
-  padding: 0 2rem;
 
   @media (min-width: 768px) {
     max-width: 768px;
@@ -17,7 +16,6 @@ export const Container = styled.div`
 
   @media (min-width: 1440px) {
     max-width: 1440px;
-    padding: 2.4rem 3.2rem;
   }
 `;
 
@@ -26,7 +24,8 @@ export const Main = styled.main`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;

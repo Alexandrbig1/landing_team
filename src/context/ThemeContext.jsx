@@ -4,6 +4,7 @@ const Theme = createContext();
 
 // eslint-disable-next-line react/prop-types
 export const ThemeContext = ({ children }) => {
+  const [menuOpen, setMenuOpen] = useState(false);
   const [isDarkTheme, setIsDarkTheme] = useState(() => {
     return localStorage.getItem("theme") === "light" ? true : false;
   });
@@ -13,11 +14,17 @@ export const ThemeContext = ({ children }) => {
     localStorage.setItem("theme", isDarkTheme ? "dark" : "light");
   };
 
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <Theme.Provider
       value={{
         isDarkTheme,
         toggleTheme,
+        toggleMenu,
+        menuOpen,
       }}
     >
       {children}

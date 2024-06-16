@@ -5,7 +5,7 @@ import {
   TbSquareArrowRightFilled,
 } from "react-icons/tb";
 
-export const ProjectsContainer = styled.div`
+export const ProjectsContainer = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,6 +13,7 @@ export const ProjectsContainer = styled.div`
   border-radius: 1.2rem;
   width: 80%;
   height: 42rem;
+  overflow: hidden;
 `;
 
 export const ProjectsWrapper = styled.div`

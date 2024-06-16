@@ -23,8 +23,10 @@ const theme = {
     colors: {
       mainBgColor: "#606c38",
       accentColor: "#283618",
+      accentLightColor: "#606c38",
       mainBgColorLowOp: "#606c3830",
       mainTextColor: "#e7e5e4",
+      darkTextColor: "#292524",
       secondaryTextColor: "#020617",
       teamSecondaryTextColor: "#f5f5f590",
       footerTextColor: "rgba(239, 237, 232, 0.3)",
@@ -38,14 +40,17 @@ const theme = {
       thumbColor: "#58815750",
       modalColor: "#333d29",
       greyColor: "#7f7f7f",
+      burgerOverlay: "rgb(250, 250, 250,0.9)",
     },
   },
   dark: {
     colors: {
       mainBgColor: "#283618",
       accentColor: "#283618",
+      accentLightColor: "#606c38",
       mainBgColorLowOp: "#28361830",
       mainTextColor: "#292524",
+      darkTextColor: "#292524",
       secondaryTextColor: "#f5f5f5",
       teamSecondaryTextColor: "#f5f5f590",
       footerTextColor: "rgba(239, 237, 232, 0.3)",
@@ -58,6 +63,7 @@ const theme = {
       thumbColor: "#58815750",
       modalColor: "#333d29",
       greyColor: "#7f7f7f",
+      burgerOverlay: "rgb(36, 36, 36,0.9)",
     },
   },
 };

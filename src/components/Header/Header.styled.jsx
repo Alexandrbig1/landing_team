@@ -6,16 +6,28 @@ export const HeaderWrapper = styled.header`
   /* background-color: transparent; */
   color: ${({ theme }) => theme.colors.headerTextColor};
   padding: 1.2rem;
+  margin: 0 auto;
   width: 100%;
-  height: auto;
+  max-width: 375px;
+  position: relative;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
   transition: background-color 0.3s ease-in-out;
   position: fixed;
   top: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 100;
+
+  @media (min-width: 768px) {
+    max-width: 768px;
+  }
+
+  @media (min-width: 1440px) {
+    max-width: 1440px;
+  }
 `;
 
 export const HeaderMenuWrapper = styled.div`
@@ -24,10 +36,14 @@ export const HeaderMenuWrapper = styled.div`
   gap: 1.2rem;
 `;
 
-export const HeaderMenu = styled.ul`
-  display: flex;
-  align-items: center;
-  gap: 1.2rem;
+export const HeaderMenu = styled.nav`
+  display: none;
+
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
 `;
 
 export const HeaderItems = styled.li`
@@ -143,4 +159,10 @@ export const HeaderLink = styled(NavLink)`
   &.active {
     background-color: ${({ theme }) => theme.colors.mainBgColor};
   }
+`;
+
+export const BurgerWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
 `;
