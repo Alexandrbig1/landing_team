@@ -27,26 +27,8 @@ Welcome to the Seventh Sense project repository! Here, you will find a collectio
 
 ### Screenshots:
 
-![Cruise Wheels](/public/images/screenshots/camp1.jpg) _Screenshot 1
-(Home Page Light Theme)_
-
-![Cruise Wheels](/public/images/screenshots/camp2.jpg) _Screenshot 2
-(Home Page Light Theme)_
-
-![Cruise Wheels](/public/images/screenshots/camp3.jpg) _Screenshot 3
-(Home Page Light Theme)_
-
-![Cruise Wheels](/public/images/screenshots/camp4.jpg) _Screenshot 4
-(Catalog Page Dark Theme)_
-
-![Cruise Wheels](/public/images/screenshots/camp5.jpg) _Screenshot 5
-(Catalog Page Modal Pop Up Light Theme)_
-
-![Cruise Wheels](/public/images/screenshots/camp6.jpg) _Screenshot 6
-(Catalog Page Modal Pop Up Reviews and Form Dark Theme)_
-
-![Cruise Wheels](/public/images/screenshots/camp7.jpg) _Screenshot 7
-(Favorites Page Light Theme Mobile Screen)_
+![Seventh Sense](/public/images/screenshots/camp1.jpg) _Screenshot 1
+(Home Page)_
 
 ## Features
 
