@@ -1,6 +1,6 @@
 # Seventh Sense
 
-Seventh Sense is a team of computer science students specializing in software engineering. United by our passion for technology, we collaborate to tackle challenging projects and innovate solutions. As aspiring software engineers, we are dedicated to continuous learning and excellence. 
+Seventh Sense is a team of computer science students specializing in software engineering. United by our passion for technology, we collaborate to tackle challenging projects and innovate solutions. As aspiring software engineers, we are dedicated to continuous learning and excellence.
 
 <img align="right" src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" width="100"/>
 
@@ -27,8 +27,20 @@ Welcome to the Seventh Sense project repository! Here, you will find a collectio
 
 ### Screenshots:
 
-![Seventh Sense](/public/images/screenshots/camp1.jpg) _Screenshot 1
+![Seventh Sense](/public/images/screenshots/seventhsense.jpg) _Screenshot 1
 (Home Page)_
+
+![Seventh Sense](/public/images/screenshots/seventhsense2.jpg) _Screenshot 2
+(Team Page)_
+
+![Seventh Sense](/public/images/screenshots/seventhsense3.jpg) _Screenshot 3
+(Projects Page (Your Energy))_
+
+![Seventh Sense](/public/images/screenshots/seventhsense4.jpg) _Screenshot 4
+(Projects Page (Foodies))_
+
+![Seventh Sense](/public/images/screenshots/seventhsense5.jpg) _Screenshot 5
+(Modal Window Contact Us)_
 
 ## Features
 
