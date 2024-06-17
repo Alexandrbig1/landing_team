@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
+import { Container } from "../layout";
 import {
   GlitchText,
   HeroBtn,
   HeroBtnIcon,
-  HeroContainer,
   HeroImg,
   HeroImgWrapper,
   HeroText,
@@ -12,7 +12,6 @@ import {
   HeroTitleWrapper,
   HeroWrapper,
 } from "./Hero.styled";
-import { Container } from "../layout";
 
 const glitchAnimation = {
   initial: {},

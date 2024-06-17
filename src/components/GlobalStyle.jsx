@@ -14,12 +14,13 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   html {
-    font-size: 62.5%;
+    font-size: 55%;
+
     scroll-behavior: smooth;
     overflow-x: hidden;
 
-    @media(max-width:980px) {
-    font-size: 55%;
+    @media(min-width:1440px) {
+    font-size: 62.5%;
   }
   }
 

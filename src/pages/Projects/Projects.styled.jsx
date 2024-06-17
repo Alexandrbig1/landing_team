@@ -12,8 +12,14 @@ export const ProjectsContainer = styled.section`
   margin: 0 auto;
   border-radius: 1.2rem;
   width: 80%;
-  height: 42rem;
+  margin-top: 6.2rem;
+  margin-bottom: 12.2rem;
   /* overflow: hidden; */
+
+  @media (min-width: 1440px) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 `;
 
 export const ProjectsWrapper = styled.div`
@@ -25,6 +31,7 @@ export const ProjectsWrapper = styled.div`
 
 export const ProjectsCardWrapper = styled.div`
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 2.4rem;
@@ -32,6 +39,10 @@ export const ProjectsCardWrapper = styled.div`
   background-color: ${({ theme }) => theme.colors.mainBgColorLowOp};
   border-radius: 1.2rem;
   width: 100%;
+
+  @media (min-width: 1440px) {
+    flex-direction: row;
+  }
 `;
 
 export const ProjectsCard = styled.div`
@@ -39,8 +50,13 @@ export const ProjectsCard = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 2.4rem;
-  width: 35%;
-  padding: 2.4rem 4.8rem;
+  padding: 2.4rem 2.4rem;
+  width: 100%;
+
+  @media (min-width: 1440px) {
+    width: 35%;
+    padding: 2.4rem 4.8rem;
+  }
 `;
 
 export const ProjectsCardTitleWrapper = styled.div`
@@ -59,8 +75,18 @@ export const ProjectsCardNumberWrapper = styled.div`
   border-radius: 50rem;
   border: 1px solid ${({ theme }) => theme.colors.mainBgColor};
   position: absolute;
-  top: -2.4rem;
-  left: -2.4rem;
+  top: -1.2rem;
+  left: -3.6rem;
+
+  @media (min-width: 768px) {
+    top: -1.2rem;
+    left: 2.4rem;
+  }
+
+  @media (min-width: 1440px) {
+    top: -2.4rem;
+    left: -2.4rem;
+  }
 `;
 
 export const ProjectsCardNumber = styled.h3`
@@ -97,8 +123,8 @@ export const ProjectsImage = styled.img`
 `;
 
 export const ProjectsImgWrapper = styled.a`
-  width: 65%;
-  height: 42rem;
+  width: 100%;
+  height: 24rem;
   overflow-y: scroll;
   overflow-x: hidden;
 
@@ -125,6 +151,11 @@ export const ProjectsImgWrapper = styled.a`
 
   &:hover {
     padding: 2.4rem 4.8rem 0;
+  }
+
+  @media (min-width: 1440px) {
+    width: 65%;
+    height: 42rem;
   }
 `;
 

@@ -11,53 +11,32 @@ const glowing = keyframes`
   100% { background-position: 0 0; }
 `;
 
-export const HeroContainer = styled.div`
-  width: 100%;
-  max-width: 375px;
-  position: relative;
-  margin: 0 auto;
-
-  @media (min-width: 768px) {
-    max-width: 768px;
-  }
-
-  @media (min-width: 1440px) {
-    max-width: 1440px;
-  }
-`;
-
 export const HeroWrapper = styled.section`
-  /* overflow: hidden; */
   width: 85%;
   height: 80%;
-  /* max-width: 38.5rem; */
-  /* max-height: 100vh; */
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   margin: 0 auto;
-  gap: 7.2rem;
-  /* background-color: ${(p) => p.theme.colors.mainBgColorLowOp}; */
+  margin-top: 6.2rem;
+  margin-bottom: 12.2rem;
+  gap: 4.2rem;
   padding: 2.4rem;
   border-radius: 1.2rem;
 
-  @media (min-width: 768px) {
-    /* max-width: 76.8rem; */
-  }
-
-  @media (min-width: 1024px) {
-    /* max-width: 102.4rem; */
-  }
-
-  @media (min-width: 1400px) {
-    /* max-width: 140rem; */
+  @media (min-width: 1440px) {
+    margin-top: 0;
+    margin-bottom: 0;
     display: grid;
     grid-template-columns: 1.25fr 1.75fr;
     justify-items: center;
+    gap: 7.2rem;
   }
 `;
 
 export const GlitchText = styled(motion.h1)`
-  font-size: 8.2rem;
+  font-size: 7.2rem;
   color: transparent;
   -webkit-text-stroke: 1px #fff;
   -webkit-text-stroke-color: #e7e5e490;
@@ -66,14 +45,23 @@ export const GlitchText = styled(motion.h1)`
   position: relative;
   transition: all var(--primary-transition);
   position: relative;
+
+  @media (min-width: 334px) {
+    font-size: 8.2rem;
+  }
 `;
 
 export const HeroTitleIcon = styled(motion.span)`
   color: #f5f5f540;
   position: absolute;
-  top: 0;
+  bottom: -0.6rem;
   right: 0;
   transform: rotate(180deg);
+
+  @media (min-width: 768px) {
+    top: 0;
+    bottom: unset;
+  }
 `;
 
 export const HeroTitleBulb = styled(FaRegLightbulb)`
@@ -86,11 +74,18 @@ export const HeroTitleWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   gap: 2.4rem;
-  /* background-color: ${(p) => p.theme.colors.mainBgColor}; */
-  /* background-color: #132a1350; */
   padding: 2.4rem;
   border-radius: 1.2rem;
   position: relative;
+
+  @media (min-width: 768px) {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 1440px) {
+    width: 100%;
+  }
 `;
 
 export const HeroText = styled.p`
@@ -103,16 +98,18 @@ export const HeroText = styled.p`
 `;
 
 export const HeroImgWrapper = styled.div`
-  /* overflow: hidden; */
   width: 100%;
-  /* width: 44rem; */
+  max-width: 385px;
   height: auto;
   padding: 1.2rem;
   border-radius: 4% 4% 23% 37% / 4% 4% 42% 27%;
   border-radius: 23% 1% 23% 1% / 42% 1% 42% 1%;
   background-color: ${(p) => p.theme.colors.mainBgColorLowOp};
-  /* background-color: red; */
   transform: scale(1.2);
+
+  @media (min-width: 334px) {
+    max-width: unset;
+  }
 `;
 
 export const HeroImg = styled.img`

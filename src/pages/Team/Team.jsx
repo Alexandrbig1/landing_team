@@ -1,5 +1,6 @@
 import teamData from "../../data/team.json";
 import { motion } from "framer-motion";
+import { Container } from "../../components/layout";
 import {
   TeamImg,
   TeamImgWrapper,
@@ -16,7 +17,6 @@ import {
   TeamProf,
   TeamNameWrapper,
 } from "./Team.styled";
-import { Container } from "../../components/layout";
 
 function Team() {
   return (

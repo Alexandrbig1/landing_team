@@ -6,14 +6,15 @@ import { IoMdClose } from "react-icons/io";
 export const ModalDiv = styled(Modal)`
   position: absolute;
   top: 50%;
-  right: 2.4rem;
+  left: 0;
+  right: 0;
   transform: translateY(-50%);
   margin: 0 auto;
   border-radius: 2rem;
-  padding: 1.2rem;
-  max-width: 480px;
+  padding: 4.8rem 1.2rem;
   width: 100%;
-  height: 80%;
+  max-width: 480px;
+  height: auto;
   background-color: ${(p) => p.theme.colors.modalColor};
   overflow-y: scroll;
   scroll-behavior: smooth;
@@ -23,12 +24,14 @@ export const ModalDiv = styled(Modal)`
   align-items: center;
   gap: 3.6rem;
 
-  @media (min-width: 365px) {
-    padding: 2.4rem;
+  @media (min-width: 768px) {
+    left: unset;
+    right: 2.4rem;
+    padding: 4.8rem 2.4rem;
   }
 
-  @media (min-width: 768px) {
-    padding: 4rem;
+  @media (min-width: 1440px) {
+    height: 80%;
   }
 `;
 
@@ -49,12 +52,16 @@ export const ModalTitleWrapper = styled.div`
 export const ModalTitle = styled.h2`
   font-family: ${primaryFont};
   font-weight: 500;
-  font-size: 3.2rem;
+  font-size: 2.4rem;
   line-height: 1.1;
   letter-spacing: -0.02em;
   text-transform: uppercase;
   text-align: center;
   color: ${(p) => p.theme.colors.whiteColor};
+
+  @media (min-width: 1440px) {
+    font-size: 3.2rem;
+  }
 `;
 
 export const ModalText = styled.p`

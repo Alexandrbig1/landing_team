@@ -21,21 +21,36 @@ export const TeamWrapper = styled.section`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 90%;
+  width: 100%;
   height: auto;
-  max-height: 100vh;
-  overflow: scroll;
+  /* overflow: scroll; */
   gap: 3.2rem;
   margin: 0 auto;
   border-radius: 1.2rem;
   padding: 2.4rem 1.2rem;
+  margin-top: 6.2rem;
+  margin-bottom: 12.2rem;
+
+  @media (min-width: 1440px) {
+    max-height: 100vh;
+    height: 100%;
+    /* width: 90%; */
+    margin-top: 0;
+    margin-bottom: 0;
+    overflow: hidden;
+  }
 `;
 
 export const TeamImg = styled.img`
-  width: 18rem;
-  height: 18rem;
+  width: 22rem;
+  height: 22rem;
   border-radius: 100rem;
   object-fit: cover;
+
+  @media (min-width: 1440px) {
+    width: 18rem;
+    height: 18rem;
+  }
 `;
 
 export const TeamSocialWeb = styled(TbWorldWww)`
@@ -201,8 +216,11 @@ export const TeamProf = styled.span`
 `;
 
 export const TeamImgWrapper = styled.div`
-  width: 22rem;
+  /* max-width: 26rem; */
+  width: 100%;
+  /* width: 26rem; */
   height: auto;
+  height: 100%;
   border-radius: 1.2rem;
   padding: 1.2rem;
   background-color: ${({ theme }) => theme.colors.mainBgColorLowOp};
@@ -237,5 +255,9 @@ export const TeamImgWrapper = styled.div`
       opacity: 1;
       animation-delay: 0.75s;
     }
+  }
+
+  @media (min-width: 1440px) {
+    width: 22rem;
   }
 `;

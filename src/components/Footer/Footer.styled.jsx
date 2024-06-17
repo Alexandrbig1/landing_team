@@ -25,13 +25,19 @@ export const FooterWrapper = styled.footer`
 export const FooterRightsWrapper = styled.div`
   display: flex;
   align-items: center;
+  flex-direction: column;
   gap: 0.4rem;
+
+  @media (min-width: 385px) {
+    flex-direction: row;
+  }
 `;
 
 export const MarkWrapper = styled.div`
   display: flex;
   align-items: center;
 `;
+
 export const YearWrapper = styled.div`
   display: flex;
   align-items: center;
@@ -50,4 +56,5 @@ export const FooterText = styled.p`
   line-height: 1.3444;
   letter-spacing: -0.02em;
   color: ${({ theme }) => theme.colors.footerTextColor};
+  white-space: nowrap;
 `;
