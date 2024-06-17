@@ -99,7 +99,7 @@ function Hero() {
         >
           <HeroImgWrapper>
             <picture>
-              <HeroImg src="/public/images/hero_desktop.jpg" alt="" />
+              <HeroImg src="/images/hero_desktop.jpg" alt="" />
             </picture>
           </HeroImgWrapper>
         </motion.div>

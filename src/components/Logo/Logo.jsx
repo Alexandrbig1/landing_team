@@ -10,7 +10,7 @@ function Logo() {
       style={{ display: "flex", alignItems: "center", gap: "12px" }}
     >
       <LogoWrapper>
-        <LogoImg src="/public/logo.png" alt="Seventh Sense logo" />
+        <LogoImg src="/logo.png" alt="Seventh Sense logo" />
       </LogoWrapper>
       <LogoText>Seventh Sense</LogoText>
     </motion.div>

@@ -76,7 +76,7 @@ function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route
-        path="/"
+        path="/landing_team/"
         element={
           <RootLayout />
           // <RootLayout toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} />
