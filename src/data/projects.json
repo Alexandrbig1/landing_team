@@ -5,7 +5,7 @@
     "url": "https://alexandrbig1.github.io/your-energy-fitness-app/",
     "description": "'Your Energy' is a fitness project by the Seventh Sense team aimed at helping you achieve your health goals. Using HTML, CSS, JavaScript, Firebase, Axios, BasicLightbox, and iziToast, this platform offers workout plans, exercise demos, and personalized nutrition advice to support your fitness journey.  ",
     "stack": ["HTML", "CSS", "JavaScript", "Firebase", "Axios"],
-    "img": "/images/fit.jpg"
+    "img": "images/fit.jpg"
   },
   {
     "number": 2,
@@ -21,6 +21,6 @@
       "MongoDB",
       "Express"
     ],
-    "img": "/images/food.jpg"
+    "img": "images/food.jpg"
   }
 ]

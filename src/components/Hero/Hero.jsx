@@ -99,7 +99,10 @@ function Hero() {
         >
           <HeroImgWrapper>
             <picture>
-              <HeroImg src="/images/hero_desktop.jpg" alt="" />
+              <HeroImg
+                src="images/hero_desktop.jpg"
+                alt="Seventh Sense office space"
+              />
             </picture>
           </HeroImgWrapper>
         </motion.div>

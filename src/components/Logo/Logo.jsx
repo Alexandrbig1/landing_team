@@ -3,17 +3,18 @@ import { motion } from "framer-motion";
 
 function Logo() {
   return (
-    <motion.div
+    <motion.a
+      href="/"
       initial={{ opacity: 0, y: -100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ type: "spring", delay: 0.25 }}
       style={{ display: "flex", alignItems: "center", gap: "12px" }}
     >
       <LogoWrapper>
-        <LogoImg src="/logo.png" alt="Seventh Sense logo" />
+        <LogoImg src="logo.png" alt="Seventh Sense logo" />
       </LogoWrapper>
       <LogoText>Seventh Sense</LogoText>
-    </motion.div>
+    </motion.a>
   );
 }
 
