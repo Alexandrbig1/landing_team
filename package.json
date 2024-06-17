@@ -1,5 +1,6 @@
 {
   "name": "landing_team",
+  "homepage": "http://Alexandrbig1.github.io/landing_team",
   "author": "Alex Smagin",
   "description": "Seventh Sense is a team of computer science students specializing in software engineering. United by our passion for technology, we collaborate to tackle challenging projects and innovate solutions. As aspiring software engineers, we are dedicated to continuous learning and excellence.",
   "license": "MIT",
@@ -36,11 +37,14 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.6.0",
     "framer-motion": "^11.2.10",
+    "gh-pages": "^6.1.1",
     "modern-normalize": "^2.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
