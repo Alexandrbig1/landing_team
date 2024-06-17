@@ -21,7 +21,7 @@ export default function MenuBurger() {
         <nav>
           <BurgerMenuItems>
             <li onClick={toggleMenu}>
-              <MenuBurgerText to="/" end>
+              <MenuBurgerText to="/landing_team/" end>
                 Home
               </MenuBurgerText>
             </li>

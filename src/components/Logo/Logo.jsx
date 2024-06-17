@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 function Logo() {
   return (
     <motion.a
-      href="/"
+      href="/landing_team/"
       initial={{ opacity: 0, y: -100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ type: "spring", delay: 0.25 }}

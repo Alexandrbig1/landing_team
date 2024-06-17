@@ -19,7 +19,6 @@ import {
 
 // eslint-disable-next-line react/prop-types
 function Header() {
-  // function Header({ toggleTheme, isDarkTheme }) {
   return (
     <HeaderWrapper>
       <Logo />
@@ -32,7 +31,7 @@ function Header() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ type: "spring", delay: 0.25 }}
               >
-                <HeaderLink to="/" end>
+                <HeaderLink to="/landing_team/" end>
                   <HeaderIcons>
                     <FaHome />
                   </HeaderIcons>
@@ -90,7 +89,6 @@ function Header() {
           </BurgerWrapper>
         </motion.div>
       </HeaderMenuWrapper>
-      {/* <ThemeSwitcher toggleTheme={toggleTheme} isDarkTheme={isDarkTheme} /> */}
     </HeaderWrapper>
   );
 }
