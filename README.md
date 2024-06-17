@@ -23,24 +23,8 @@ Welcome to the Seventh Sense project repository! Here, you will find a collectio
 
 - [Features](#features)
 - [Technologies Used](#technologies-used)
+- [Screenshots](#screenshots)
 - [License](#license)
-
-### Screenshots:
-
-![Seventh Sense](/public/images/screenshots/seventhsense.jpg) _Screenshot 1
-(Home Page)_
-
-![Seventh Sense](/public/images/screenshots/seventhsense2.jpg) _Screenshot 2
-(Team Page)_
-
-![Seventh Sense](/public/images/screenshots/seventhsense3.jpg) _Screenshot 3
-(Projects Page (Your Energy))_
-
-![Seventh Sense](/public/images/screenshots/seventhsense4.jpg) _Screenshot 4
-(Projects Page (Foodies))_
-
-![Seventh Sense](/public/images/screenshots/seventhsense5.jpg) _Screenshot 5
-(Modal Window Contact Us)_
 
 ## Features
 
@@ -65,6 +49,23 @@ Welcome to the Seventh Sense project repository! Here, you will find a collectio
 - React Modal
 - React Toastify
 - Styled Components
+
+### Screenshots:
+
+![Seventh Sense](/public/images/screenshots/seventhsense.jpg) _Screenshot 1
+(Home Page)_
+
+![Seventh Sense](/public/images/screenshots/seventhsense2.jpg) _Screenshot 2
+(Team Page)_
+
+![Seventh Sense](/public/images/screenshots/seventhsense3.jpg) _Screenshot 3
+(Projects Page (Your Energy))_
+
+![Seventh Sense](/public/images/screenshots/seventhsense4.jpg) _Screenshot 4
+(Projects Page (Foodies))_
+
+![Seventh Sense](/public/images/screenshots/seventhsense5.jpg) _Screenshot 5
+(Modal Window Contact Us)_
 
 ## Issues
 
