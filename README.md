@@ -67,7 +67,7 @@ Welcome to the Seventh Sense project repository! Here, you will find a collectio
 ![Seventh Sense](/public/images/screenshots/seventhsense5.jpg) _Screenshot 5
 (Modal Window Contact Us)_
 
-![Seventh Sense](/public/images/screenshots/seventhsense5.jpg) _Screenshot 6
+![Seventh Sense](/public/images/screenshots/seventhsense6.jpg) _Screenshot 6
 (Page Not Found)_
 
 ## Issues
