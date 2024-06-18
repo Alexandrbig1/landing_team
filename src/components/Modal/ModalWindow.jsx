@@ -77,8 +77,8 @@ function ModalWindow({ modalIsOpen, setIsOpen }) {
         <ModalTitle>Let's work together!</ModalTitle>
         <ModalText>
           You can contact us directly at{" "}
-          <ModalTextLink href="mailto:contact@seventhsense.com">
-            contact@seventhsense.com
+          <ModalTextLink href="mailto:seventhsenseteam@gmail.com">
+            seventhsenseteam@gmail.com
           </ModalTextLink>{" "}
           or through this form.
         </ModalText>

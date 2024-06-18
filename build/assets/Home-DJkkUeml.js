@@ -1,8 +1,8 @@
-import{f as a,p as i,m as o,a as n,F as s,L as l,P as c,j as t,C as f}from"./index-Cr2wK8Pi.js";const p=a`
+import{f as a,p as i,m as o,a as n,F as s,L as l,P as c,j as e,C as d,H as m,b as f}from"./index-Bs1fdMff.js";const p=a`
   0% { background-position: 0 0; }
   50% { background-position: 400% 0; }
   100% { background-position: 0 0; }
-`,d=i.section`
+`,g=i.section`
   width: 85%;
   height: 80%;
   display: flex;
@@ -24,7 +24,7 @@ import{f as a,p as i,m as o,a as n,F as s,L as l,P as c,j as t,C as f}from"./ind
     justify-items: center;
     gap: 7.2rem;
   }
-`,m=i(o.h1)`
+`,h=i(o.h1)`
   font-size: 7.2rem;
   color: transparent;
   -webkit-text-stroke: 1px #fff;
@@ -38,7 +38,7 @@ import{f as a,p as i,m as o,a as n,F as s,L as l,P as c,j as t,C as f}from"./ind
   @media (min-width: 334px) {
     font-size: 8.2rem;
   }
-`,g=i(o.span)`
+`,u=i(o.span)`
   color: #f5f5f540;
   position: absolute;
   bottom: -0.6rem;
@@ -49,9 +49,9 @@ import{f as a,p as i,m as o,a as n,F as s,L as l,P as c,j as t,C as f}from"./ind
     top: 0;
     bottom: unset;
   }
-`,h=i(s)`
+`,x=i(s)`
   font-size: 6.4rem;
-`,u=i.div`
+`,b=i.div`
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -69,31 +69,31 @@ import{f as a,p as i,m as o,a as n,F as s,L as l,P as c,j as t,C as f}from"./ind
   @media (min-width: 1440px) {
     width: 100%;
   }
-`,x=i.p`
+`,w=i.p`
   font-family: ${n};
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.3444;
   letter-spacing: -0.02em;
-  color: ${({theme:e})=>e.colors.whiteColor};
-`,b=i.div`
+  color: ${({theme:t})=>t.colors.whiteColor};
+`,j=i.div`
   width: 100%;
   max-width: 385px;
   height: auto;
   padding: 1.2rem;
   border-radius: 4% 4% 23% 37% / 4% 4% 42% 27%;
   border-radius: 23% 1% 23% 1% / 42% 1% 42% 1%;
-  background-color: ${e=>e.theme.colors.mainBgColorLowOp};
+  background-color: ${t=>t.theme.colors.mainBgColorLowOp};
   transform: scale(1.2);
 
   @media (min-width: 334px) {
     max-width: unset;
   }
-`,w=i.img`
+`,y=i.img`
   width: 100%;
   height: auto;
   border-radius: 1% 24% 23% 37% / 1% 24% 42% 27%;
-`,j=i(l)`
+`,k=i(l)`
   position: relative;
   border: none;
   background: none;
@@ -102,8 +102,8 @@ import{f as a,p as i,m as o,a as n,F as s,L as l,P as c,j as t,C as f}from"./ind
   border-radius: 1.2rem;
   width: 100%;
   cursor: pointer;
-  background-color: ${e=>e.theme.colors.mainBgColor};
-  color: ${e=>e.theme.colors.whiteColor};
+  background-color: ${t=>t.theme.colors.mainBgColor};
+  color: ${t=>t.theme.colors.whiteColor};
   text-transform: uppercase;
   text-align: center;
   display: flex;
@@ -121,13 +121,13 @@ import{f as a,p as i,m as o,a as n,F as s,L as l,P as c,j as t,C as f}from"./ind
     content: "";
     background: linear-gradient(
       45deg,
-      ${e=>e.theme.colors.whiteColorLowOp},
+      ${t=>t.theme.colors.whiteColorLowOp},
       transparent,
-      ${e=>e.theme.colors.whiteColorLowOp},
+      ${t=>t.theme.colors.whiteColorLowOp},
       transparent,
-      ${e=>e.theme.colors.whiteColorLowOp},
+      ${t=>t.theme.colors.whiteColorLowOp},
       transparent,
-      ${e=>e.theme.colors.whiteColorLowOp}
+      ${t=>t.theme.colors.whiteColorLowOp}
     );
     position: absolute;
     top: -2px;
@@ -145,7 +145,7 @@ import{f as a,p as i,m as o,a as n,F as s,L as l,P as c,j as t,C as f}from"./ind
   &:hover:before {
     animation-play-state: paused;
   }
-`,y=i(c)`
+`,v=i(c)`
   font-size: 2.4rem;
-  color: ${e=>e.theme.colors.whiteColor};
-`,r={initial:{},animate:{color:["#f5f5f540","#f5f5f540","#f5f5f540","#f5f5f540","#f5f5f540","#f5f5f540","#f5f5f540","rgba(255, 255, 255, 0)","rgba(255, 255, 255, 0)","rgba(255, 255, 255, 0)","rgba(255, 255, 255, 0)","rgba(255, 255, 255, 0)","rgba(255, 255, 255, 0)","rgba(255, 255, 255, 0)","#f5f5f540","#f5f5f540","#f5f5f540","#f5f5f540","#f5f5f540","rgba(255, 255, 255, 0)","rgba(255, 255, 255, 0)","#f5f5f540","#f5f5f540","rgba(255, 255, 255, 0)","rgba(255, 255, 255, 0)","#f5f5f540","#f5f5f540"],transition:{duration:2,repeat:1/0,repeatType:"mirror",delay:1}}};function k(){return t.jsx(f,{children:t.jsxs(d,{children:[t.jsx(o.div,{initial:{opacity:0,y:100},animate:{opacity:1,y:0},transition:{type:"spring"},children:t.jsxs(u,{children:[t.jsxs(m,{variants:r,initial:"initial",animate:"animate",children:["Seventh Sense",t.jsx(g,{variants:r,initial:"initial",animate:"animate",children:t.jsx(h,{})})]}),t.jsx(x,{children:"is a team of computer science students specializing in software engineering. United by our passion for technology, we collaborate to tackle challenging projects and innovate solutions. As aspiring software engineers, we are dedicated to continuous learning and excellence. Check out our landing page to meet our team, explore our projects, and feel free to contact us!"}),t.jsxs(j,{to:"projects",children:[t.jsx("span",{children:"our projects"}),t.jsx(y,{})]})]})}),t.jsx(o.div,{initial:{opacity:0},animate:{opacity:1},transition:{duration:1.5},children:t.jsx(b,{children:t.jsx("picture",{children:t.jsx(w,{src:"images/hero_desktop.jpg",alt:"Seventh Sense office space"})})})})]})})}function C(){return t.jsx("div",{children:t.jsx(k,{})})}export{C as default};
+  color: ${t=>t.theme.colors.whiteColor};
+`,r={initial:{},animate:{color:["#f5f5f540","#f5f5f540","#f5f5f540","#f5f5f540","#f5f5f540","#f5f5f540","#f5f5f540","rgba(255, 255, 255, 0)","rgba(255, 255, 255, 0)","rgba(255, 255, 255, 0)","rgba(255, 255, 255, 0)","rgba(255, 255, 255, 0)","rgba(255, 255, 255, 0)","rgba(255, 255, 255, 0)","#f5f5f540","#f5f5f540","#f5f5f540","#f5f5f540","#f5f5f540","rgba(255, 255, 255, 0)","rgba(255, 255, 255, 0)","#f5f5f540","#f5f5f540","rgba(255, 255, 255, 0)","rgba(255, 255, 255, 0)","#f5f5f540","#f5f5f540"],transition:{duration:2,repeat:1/0,repeatType:"mirror",delay:1}}};function H(){return e.jsx(d,{children:e.jsxs(g,{children:[e.jsx(o.div,{initial:{opacity:0,y:100},animate:{opacity:1,y:0},transition:{type:"spring"},children:e.jsxs(b,{children:[e.jsxs(h,{variants:r,initial:"initial",animate:"animate",children:["Seventh Sense",e.jsx(u,{variants:r,initial:"initial",animate:"animate",children:e.jsx(x,{})})]}),e.jsx(w,{children:"is a team of computer science students specializing in software engineering. United by our passion for technology, we collaborate to tackle challenging projects and innovate solutions. As aspiring software engineers, we are dedicated to continuous learning and excellence. Check out our landing page to meet our team, explore our projects, and feel free to contact us!"}),e.jsxs(k,{to:"projects",children:[e.jsx("span",{children:"our projects"}),e.jsx(v,{})]})]})}),e.jsx(o.div,{initial:{opacity:0},animate:{opacity:1},transition:{duration:1.5},children:e.jsx(j,{children:e.jsx("picture",{children:e.jsx(y,{src:"images/hero_desktop.jpg",alt:"Seventh Sense office space"})})})})]})})}function $(){return e.jsxs(e.Fragment,{children:[e.jsx(m,{children:e.jsxs(f,{children:[e.jsx("title",{children:"Seventh Sense - Home Page"}),e.jsx("meta",{name:"description",content:""}),e.jsx("meta",{name:"keywords",content:""})]})}),e.jsx("div",{children:e.jsx(H,{})})]})}export{$ as default};

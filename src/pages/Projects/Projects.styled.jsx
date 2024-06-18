@@ -162,18 +162,22 @@ export const ProjectsImgWrapper = styled.a`
 export const ProjectsArrowLeft = styled(TbSquareArrowLeftFilled)`
   font-size: 3.2rem;
   color: ${({ theme }) => theme.colors.mainBgColor};
+  transition: all var(--primary-transition);
 
   &:hover {
     cursor: pointer;
+    color: ${({ theme }) => theme.colors.btnHoverColor};
   }
 `;
 
 export const ProjectsArrowRight = styled(TbSquareArrowRightFilled)`
   font-size: 3.2rem;
   color: ${({ theme }) => theme.colors.mainBgColor};
+  transition: all var(--primary-transition);
 
   &:hover {
     cursor: pointer;
+    color: ${({ theme }) => theme.colors.btnHoverColor};
   }
 `;
 

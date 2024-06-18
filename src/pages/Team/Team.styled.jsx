@@ -84,7 +84,7 @@ export const TeamSocialLinkWeb = styled.a`
   justify-content: center;
   border-radius: 50rem;
   padding: 0.8rem;
-  opacity: 0;
+  opacity: 1;
 
   position: absolute;
   bottom: 6.2rem;
@@ -103,6 +103,10 @@ export const TeamSocialLinkWeb = styled.a`
       animation: ${scale} 1s ease-in-out infinite;
     }
   }
+
+  @media (min-width: 1440px) {
+    opacity: 0;
+  }
 `;
 
 export const TeamSocialLinkGitHub = styled.a`
@@ -112,7 +116,7 @@ export const TeamSocialLinkGitHub = styled.a`
   justify-content: center;
   border-radius: 50rem;
   padding: 0.8rem;
-  opacity: 0;
+  opacity: 1;
 
   transition: all var(--primary-transition);
   transition: opacity var(--primary-transition);
@@ -131,6 +135,10 @@ export const TeamSocialLinkGitHub = styled.a`
       animation: ${scale} 1s ease-in-out infinite;
     }
   }
+
+  @media (min-width: 1440px) {
+    opacity: 0;
+  }
 `;
 
 export const TeamSocialLinkTwitter = styled.a`
@@ -140,7 +148,7 @@ export const TeamSocialLinkTwitter = styled.a`
   justify-content: center;
   border-radius: 50rem;
   padding: 0.8rem;
-  opacity: 0;
+  opacity: 1;
 
   transition: all var(--primary-transition);
   transition: opacity var(--primary-transition);
@@ -159,6 +167,10 @@ export const TeamSocialLinkTwitter = styled.a`
       animation: ${scale} 1s ease-in-out infinite;
     }
   }
+
+  @media (min-width: 1440px) {
+    opacity: 0;
+  }
 `;
 
 export const TeamSocialLinkLinkedin = styled.a`
@@ -168,7 +180,7 @@ export const TeamSocialLinkLinkedin = styled.a`
   justify-content: center;
   border-radius: 50rem;
   padding: 0.8rem;
-  opacity: 0;
+  opacity: 1;
   transition: all var(--primary-transition);
   transition: opacity var(--primary-transition);
   transition-delay: 0.3s;
@@ -184,6 +196,10 @@ export const TeamSocialLinkLinkedin = styled.a`
     ${TeamSocialLinkedin} {
       animation: ${scale} 1s ease-in-out infinite;
     }
+  }
+
+  @media (min-width: 1440px) {
+    opacity: 0;
   }
 `;
 

@@ -129,8 +129,14 @@ export const ModalBtn = styled.button`
   padding: 1.2rem;
   border-radius: 0.4rem;
   background-color: ${(p) => p.theme.colors.whiteColor};
+  color: ${(p) => p.theme.colors.darkTextColor};
   cursor: pointer;
-  color: #292524;
+  transition: all var(--primary-transition);
+
+  &:hover {
+    background-color: ${(p) => p.theme.colors.btnHoverColor};
+    color: ${(p) => p.theme.colors.whiteColor};
+  }
 `;
 
 export const CloseModal = styled(IoMdClose)`
@@ -144,5 +150,6 @@ export const CloseModal = styled(IoMdClose)`
 
   &:hover {
     transform: rotate(90deg);
+    color: ${(p) => p.theme.colors.btnHoverColor};
   }
 `;

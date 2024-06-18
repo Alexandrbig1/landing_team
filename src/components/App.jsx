@@ -22,8 +22,10 @@ const theme = {
   light: {
     colors: {
       mainBgColor: "#606c38",
+      mainBgColorRev: "#283618",
       accentColor: "#283618",
       accentLightColor: "#606c38",
+      btnHoverColor: "#588157",
       mainBgColorLowOp: "#606c3830",
       mainTextColor: "#e7e5e4",
       darkTextColor: "#292524",
@@ -47,8 +49,10 @@ const theme = {
   dark: {
     colors: {
       mainBgColor: "#283618",
+      mainBgColorRev: "#606c38",
       accentColor: "#283618",
       accentLightColor: "#606c38",
+      btnHoverColor: "#588157",
       mainBgColorLowOp: "#28361830",
       mainTextColor: "#292524",
       darkTextColor: "#292524",
