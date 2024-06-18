@@ -36,7 +36,7 @@ export const HeaderMenuWrapper = styled.div`
   gap: 1.2rem;
 `;
 
-export const HeaderMenu = styled.nav`
+export const HeaderMenu = styled.ul`
   display: none;
 
   @media (min-width: 768px) {
