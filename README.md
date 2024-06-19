@@ -59,15 +59,18 @@ Welcome to the Seventh Sense project repository! Here, you will find a collectio
 (Team Page)_
 
 ![Seventh Sense](/public/images/screenshots/seventhsense3.jpg) _Screenshot 3
-(Projects Page (Your Energy))_
-
-![Seventh Sense](/public/images/screenshots/seventhsense4.jpg) _Screenshot 4
 (Projects Page (Foodies))_
 
+![Seventh Sense](/public/images/screenshots/seventhsense4.jpg) _Screenshot 4
+(Projects Page (Your Energy))_
+
 ![Seventh Sense](/public/images/screenshots/seventhsense5.jpg) _Screenshot 5
-(Modal Window Contact Us)_
+(Projects Page (English-Excellence))_
 
 ![Seventh Sense](/public/images/screenshots/seventhsense6.jpg) _Screenshot 6
+(Modal Window Contact Us)_
+
+![Seventh Sense](/public/images/screenshots/seventhsense7.jpg) _Screenshot 7
 (Page Not Found)_
 
 ## Issues
