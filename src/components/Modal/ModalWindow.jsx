@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { toast } from "react-toastify";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { commonToastOptions } from "../../helpers/toastOptions";
 import {
   CloseModal,
   Form,
@@ -43,20 +44,32 @@ function ModalWindow({ modalIsOpen, setIsOpen }) {
   // const onSubmit = (data) => {
   const onSubmit = () => {
     toast.success(
-      "Thank you for your message! We will get back to you shortly."
+      "Thank you for your message! We will get back to you shortly.",
+      commonToastOptions
     );
     reset();
   };
+
   const onError = (errors) => {
     if (errors.name) {
-      toast.error("Name is required. Please enter your name.");
+      toast.error(
+        "Name is required. Please enter your name.",
+        commonToastOptions
+      );
     } else if (errors.email) {
-      toast.error("Invalid email address. Please enter a valid email.");
+      toast.error(
+        "Invalid email address. Please enter a valid email.",
+        commonToastOptions
+      );
     } else if (errors.message) {
-      toast.error("Message is required. Please enter your message.");
+      toast.error(
+        "Message is required. Please enter your message.",
+        commonToastOptions
+      );
     } else {
       toast.error(
-        "There was an error submitting the form. Please check your inputs."
+        "There was an error submitting the form. Please check your inputs.",
+        commonToastOptions
       );
     }
   };
@@ -77,7 +90,10 @@ function ModalWindow({ modalIsOpen, setIsOpen }) {
         <ModalTitle>Let's work together!</ModalTitle>
         <ModalText>
           You can contact us directly at{" "}
-          <ModalTextLink href="mailto:seventhsenseteam@gmail.com">
+          <ModalTextLink
+            href="mailto:seventhsenseteam@gmail.com"
+            aria-label="Email address contact@alexsmagin.dev"
+          >
             seventhsenseteam@gmail.com
           </ModalTextLink>{" "}
           or through this form.
@@ -89,20 +105,28 @@ function ModalWindow({ modalIsOpen, setIsOpen }) {
           type="text"
           id="name"
           placeholder="Your Name"
+          aria-label="Your Name"
+          aria-required="true"
         />
         <ModalInput
           {...register("email")}
           type="email"
           id="email"
           placeholder="Your E-mail"
+          aria-label="Your E-mail"
+          aria-required="true"
         />
         <ModalTextArea
           {...register("message")}
           id="message"
           placeholder="Your Message"
           rows="5"
+          aria-label="Your Message"
+          aria-required="true"
         />
-        <ModalBtn type="submit">Send</ModalBtn>
+        <ModalBtn type="submit" aria-label="Submit the form">
+          Send
+        </ModalBtn>
       </Form>
     </ModalDiv>
   );

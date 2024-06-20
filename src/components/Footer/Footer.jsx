@@ -1,6 +1,7 @@
 import SocialIcons from "../SocialIcons/SocialIcons";
 import Year from "../Year/Year";
 import { motion } from "framer-motion";
+import { Container } from "../layout";
 import {
   FooterRightsWrapper,
   FooterText,
@@ -9,7 +10,6 @@ import {
   TradeMark,
   YearWrapper,
 } from "./Footer.styled";
-import { Container } from "../layout";
 
 function Footer() {
   return (
