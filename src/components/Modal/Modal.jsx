@@ -1,10 +1,14 @@
 import { FiSend } from "react-icons/fi";
 import { useState } from "react";
-import { HeaderButton, HeaderIcons, HeaderText } from "../Header/Header.styled";
 import ModalWindow from "./ModalWindow";
+import {
+  HeaderButtonModal,
+  HeaderIconsModal,
+  HeaderTextModal,
+} from "./Modal.styled";
 
 // eslint-disable-next-line react/prop-types
-function Modal({ onlyText }) {
+function Modal() {
   const [modalIsOpen, setIsOpen] = useState(false);
 
   function openModal() {
@@ -13,22 +17,17 @@ function Modal({ onlyText }) {
 
   return (
     <>
-      <HeaderButton
-        style={onlyText ? { width: "100%", height: "100%" } : {}}
+      <HeaderButtonModal
         type="button"
+        aria-label="Open contact form"
+        title="Contact"
         onClick={openModal}
       >
-        {onlyText ? (
-          <HeaderText style={{ transform: "scale(1)" }}>Contact</HeaderText>
-        ) : (
-          <>
-            <HeaderIcons>
-              <FiSend />
-            </HeaderIcons>
-            <HeaderText>Contact</HeaderText>
-          </>
-        )}
-      </HeaderButton>
+        <HeaderIconsModal>
+          <FiSend />
+        </HeaderIconsModal>
+        <HeaderTextModal>Contact</HeaderTextModal>
+      </HeaderButtonModal>
       <ModalWindow setIsOpen={setIsOpen} modalIsOpen={modalIsOpen} />
     </>
   );

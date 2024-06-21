@@ -1,6 +1,5 @@
 import SocialIcons from "../SocialIcons/SocialIcons";
 import { useTheme } from "../../context/ThemeContext";
-import Modal from "../Modal/Modal";
 import {
   BurgerContainer,
   CloseBurgerMenu,
@@ -34,9 +33,6 @@ export default function MenuBurger() {
               <MenuBurgerText to="projects" end>
                 Projects
               </MenuBurgerText>
-            </li>
-            <li onClick={toggleMenu}>
-              <Modal onlyText={true} />
             </li>
           </BurgerMenuItems>
         </nav>

@@ -67,27 +67,31 @@ function Header() {
                 </HeaderLink>
               </motion.div>
             </HeaderItems>
-            <HeaderItems>
-              <motion.div
-                initial={{ opacity: 0, y: -100 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ type: "spring", delay: 1 }}
-              >
-                <Modal />
-              </motion.div>
-            </HeaderItems>
           </HeaderMenu>
         </nav>
-        <motion.div
-          initial={{ opacity: 0, y: -100 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ type: "spring", delay: 1.25 }}
-        >
-          <BurgerWrapper>
+        <BurgerWrapper>
+          <motion.div
+            initial={{ opacity: 0, y: -100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ type: "spring", delay: 1 }}
+          >
+            <Modal />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ type: "spring", delay: 1.25 }}
+          >
             <ThemeSwitcher />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: -100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ type: "spring", delay: 1.5 }}
+          >
             <MenuBurgerIcon />
-          </BurgerWrapper>
-        </motion.div>
+          </motion.div>
+        </BurgerWrapper>
       </HeaderMenuWrapper>
     </HeaderWrapper>
   );
