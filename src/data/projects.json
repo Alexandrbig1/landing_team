@@ -3,6 +3,10 @@
     "number": 1,
     "title": "Foodies",
     "url": "https://foodies-recipes-project.netlify.app/",
+    "repoFront": "https://github.com/SofiaProtsiv/recipes-project",
+    "repoBack": "https://github.com/EvgeniyGal/recipes-project",
+    "design": "https://www.figma.com/file/TKl7kDNvwtz62RsuWNnQ5E/Foodies?type=design&node-id=127-2517&mode=design&t=UejayJaJevVrIG5E-0",
+    "api": "https://project-ssback01.onrender.com/doc/",
     "description": "'Foodies' is a food blog by the Seventh Sense team, built with HTML, CSS, and JavaScript. Using React for the frontend and Node.js with Express for the backend, MongoDB handles our data. 'Foodies' inspires culinary exploration for both seasoned chefs and novice cooks.",
     "stack": [
       "HTML",
@@ -19,6 +23,8 @@
     "number": 2,
     "title": "Your Energy",
     "url": "https://alexandrbig1.github.io/your-energy-fitness-app/",
+    "repoFront": "https://github.com/Alexandrbig1/your-energy-fitness-app",
+    "design": "https://www.figma.com/file/1ifqGcQBIzMoc21yIqyV5q/Your-energy?type=design&node-id=205-6586&mode=design&t=M9PaDXqQsAqMNdQS-0",
     "description": "'Your Energy' is a fitness project by the Seventh Sense team aimed at helping you achieve your health goals. Using HTML, CSS, JavaScript, Firebase, Axios, BasicLightbox, and iziToast, this platform offers workout plans, exercise demos, and personalized nutrition advice to support your fitness journey.",
     "stack": ["HTML", "CSS", "JavaScript", "Firebase", "Axios"],
     "img": "images/fit.jpg"
@@ -27,6 +33,8 @@
     "number": 3,
     "title": "English Excellence",
     "url": "https://sofiaprotsiv.github.io/english-excellence",
+    "repoFront": "https://github.com/SofiaProtsiv/english-excellence",
+    "design": "https://www.figma.com/file/MrdZUmIfeT1bKd8u5GWLRt/English-Excellence-2.0?type=design&node-id=0-1&mode=design",
     "description": "'English Excellence' is a one-page language learning project by the Seventh Sense team. It features theme customization, teacher selection, and personalized assistance to enhance your English proficiency using HTML, CSS, and JavaScript.",
     "stack": ["HTML", "CSS", "JavaScript", "Vite", "Swiper"],
     "img": "images/eng.jpg"

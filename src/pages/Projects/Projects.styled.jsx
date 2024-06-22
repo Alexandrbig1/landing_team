@@ -155,7 +155,7 @@ export const ProjectsImgWrapper = styled.a`
 
   @media (min-width: 1440px) {
     width: 65%;
-    height: 42rem;
+    height: 46rem;
   }
 `;
 
