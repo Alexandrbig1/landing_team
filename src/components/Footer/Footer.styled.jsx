@@ -7,8 +7,9 @@ export const FooterWrapper = styled.footer`
   padding: 1.2rem;
   width: 100%;
   display: flex;
+  flex-direction: column-reverse;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   gap: 0.4rem;
   transition: background-color var(--primary-transition);
   position: absolute;
@@ -20,6 +21,10 @@ export const FooterWrapper = styled.footer`
   font-size: 1.6rem;
   line-height: 1.5;
   color: ${({ theme }) => theme.colors.footerTextColor};
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
 `;
 
 export const FooterRightsWrapper = styled.div`

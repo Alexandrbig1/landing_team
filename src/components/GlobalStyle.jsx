@@ -14,14 +14,14 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   html {
-    font-size: 55%;
+    font-size: 62.5%;
 
     scroll-behavior: smooth;
     overflow-x: hidden;
 
-    @media(min-width:1440px) {
+    /* @media(min-width:1440px) {
     font-size: 62.5%;
-  }
+  } */
   }
 
   body {
