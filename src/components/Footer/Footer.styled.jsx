@@ -10,7 +10,7 @@ export const FooterWrapper = styled.footer`
   flex-direction: column-reverse;
   justify-content: space-between;
   /* align-items: center; */
-  gap: 0.4rem;
+  gap: 1.2rem;
   transition: background-color var(--primary-transition);
   position: absolute;
   bottom: 0;
@@ -24,6 +24,7 @@ export const FooterWrapper = styled.footer`
 
   @media (min-width: 768px) {
     flex-direction: row;
+    gap: 0.4rem;
   }
 `;
 
@@ -31,6 +32,7 @@ export const FooterRightsWrapper = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: center;
   gap: 0.4rem;
 
   @media (min-width: 385px) {

@@ -6,10 +6,6 @@ export const SocialLinksWrapper = styled.div`
   align-items: center;
   gap: 1.2rem;
   align-self: flex-end;
-
-  /* position: fixed;
-  right: 2.4rem;
-  bottom: 2.4rem; */
 `;
 
 export const Link = styled.a`

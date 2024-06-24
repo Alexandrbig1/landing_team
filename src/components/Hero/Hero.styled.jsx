@@ -12,7 +12,7 @@ const glowing = keyframes`
 `;
 
 export const HeroWrapper = styled.section`
-  width: 85%;
+  width: 90%;
   height: 80%;
   display: flex;
   flex-direction: column;
@@ -22,8 +22,16 @@ export const HeroWrapper = styled.section`
   margin-top: 6.2rem;
   margin-bottom: 12.2rem;
   gap: 4.2rem;
-  padding: 2.4rem;
+  padding: 2.4rem 1.2rem;
   border-radius: 1.2rem;
+
+  @media (min-width: 344px) {
+    padding: 2.4rem;
+  }
+
+  @media (min-width: 385px) {
+    width: 100%;
+  }
 
   @media (min-width: 1440px) {
     margin-top: 0;
@@ -32,6 +40,7 @@ export const HeroWrapper = styled.section`
     grid-template-columns: 1.25fr 1.75fr;
     justify-items: center;
     gap: 7.2rem;
+    width: 85%;
   }
 `;
 
@@ -46,7 +55,7 @@ export const GlitchText = styled(motion.h1)`
   transition: all var(--primary-transition);
   position: relative;
 
-  @media (min-width: 334px) {
+  @media (min-width: 768px) {
     font-size: 8.2rem;
   }
 `;
@@ -74,9 +83,13 @@ export const HeroTitleWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   gap: 2.4rem;
-  padding: 2.4rem;
+  padding: 2.4rem 1.2rem;
   border-radius: 1.2rem;
   position: relative;
+
+  @media (min-width: 344px) {
+    padding: 2.4rem;
+  }
 
   @media (min-width: 768px) {
     width: 80%;
@@ -106,9 +119,18 @@ export const HeroImgWrapper = styled.div`
   border-radius: 23% 1% 23% 1% / 42% 1% 42% 1%;
   background-color: ${(p) => p.theme.colors.mainBgColorLowOp};
   transform: scale(1.2);
+  margin: 0 auto;
 
   @media (min-width: 334px) {
     max-width: unset;
+  }
+
+  @media (min-width: 768px) {
+    width: 80%;
+  }
+
+  @media (min-width: 1440px) {
+    width: 100%;
   }
 `;
 
