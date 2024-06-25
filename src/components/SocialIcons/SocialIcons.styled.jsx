@@ -17,16 +17,24 @@ export const Link = styled.a`
 export const DiscordIcon = styled(BsDiscord)`
   color: ${(p) => (p && p.$color ? p.$color : p.theme.colors.headerTextColor)};
   font-size: 3.6rem;
-  transition: color 0.2s linear;
+  transition: all var(--primary-transition);
   padding: 0.6rem;
   border-radius: 50%;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: #7289d9;
+    transform: scale(1.2);
   }
 `;
 
 export const WoolfImg = styled.img`
   width: 3.6rem;
   height: 3.6rem;
+  transition: all var(--primary-transition);
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
 `;
