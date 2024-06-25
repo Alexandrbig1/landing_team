@@ -24,6 +24,7 @@ export const FooterWrapper = styled.footer`
 
   @media (min-width: 768px) {
     flex-direction: row;
+    align-items: end;
     gap: 0.4rem;
   }
 `;

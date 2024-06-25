@@ -3,6 +3,7 @@ import { TiThMenu } from "react-icons/ti";
 import { IoMdClose } from "react-icons/io";
 import { primaryFont } from "../fonts";
 import { NavLink } from "react-router-dom";
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 export const IconMenuWrapper = styled.div`
   cursor: pointer;
@@ -94,24 +95,35 @@ export const BurgerLogoWrapper = styled.div`
   gap: 1.2rem;
 `;
 
-export const MenuText = styled.a`
-  color: ${(p) => p.theme.colors.mainTextColor};
-  font-family: ${primaryFont};
-  font-size: 1.8rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.33;
-  letter-spacing: -0.36px;
+export const MenuBurgerLinkIcon = styled(FaLongArrowAltRight)`
+  font-size: 2.4rem;
+  color: ${({ theme }) => theme.colors.accentLightColor};
+  opacity: 0;
+  transition: all var(--primary-transition);
+`;
+
+export const MenuBurgerItems = styled.li`
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
 `;
 
 export const MenuBurgerText = styled(NavLink)`
-  font-size: 1.4rem;
+  font-size: 2rem;
   font-weight: 400;
   font-family: ${primaryFont};
   color: ${({ theme }) => theme.colors.mainTextColorRev};
+  background-color: transparent;
   line-height: 1.28571;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
 
   &.active {
     color: ${({ theme }) => theme.colors.accentLightColor};
+
+    ${MenuBurgerLinkIcon} {
+      opacity: 1;
+    }
   }
 `;

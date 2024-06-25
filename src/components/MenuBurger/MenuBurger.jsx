@@ -7,6 +7,8 @@ import {
   BurgerMenuItems,
   BurgerLogoWrapper,
   MenuBurgerText,
+  MenuBurgerLinkIcon,
+  MenuBurgerItems,
 } from "./MenuBurger.styled";
 
 // eslint-disable-next-line react/prop-types
@@ -19,21 +21,24 @@ export default function MenuBurger() {
         <CloseBurgerMenu onClick={toggleMenu} />
         <nav>
           <BurgerMenuItems>
-            <li onClick={toggleMenu}>
+            <MenuBurgerItems onClick={toggleMenu}>
               <MenuBurgerText to="/landing_team/" end>
+                <MenuBurgerLinkIcon />
                 Home
               </MenuBurgerText>
-            </li>
-            <li onClick={toggleMenu}>
+            </MenuBurgerItems>
+            <MenuBurgerItems onClick={toggleMenu}>
               <MenuBurgerText to="team" end>
+                <MenuBurgerLinkIcon />
                 Team
               </MenuBurgerText>
-            </li>
-            <li onClick={toggleMenu}>
+            </MenuBurgerItems>
+            <MenuBurgerItems onClick={toggleMenu}>
               <MenuBurgerText to="projects" end>
+                <MenuBurgerLinkIcon />
                 Projects
               </MenuBurgerText>
-            </li>
+            </MenuBurgerItems>
           </BurgerMenuItems>
         </nav>
         <BurgerLogoWrapper>
