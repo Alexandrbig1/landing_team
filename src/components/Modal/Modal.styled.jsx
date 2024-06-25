@@ -91,10 +91,16 @@ export const ModalInput = styled.input`
   padding: 1.2rem;
   border-radius: 0.4rem;
   background-color: ${(p) => p.theme.colors.whiteColor};
-  color: #292524;
+  color: ${(p) => p.theme.colors.darkTextColor};
+  transition: all var(--primary-transition);
 
   &::placeholder {
     color: ${(p) => p.theme.colors.greyColor};
+  }
+
+  &:hover,
+  &:focus {
+    outline: 1px solid #affc41;
   }
 `;
 
@@ -111,9 +117,15 @@ export const ModalTextArea = styled.textarea`
   border-radius: 0.4rem;
   background-color: ${(p) => p.theme.colors.whiteColor};
   resize: none;
+  transition: all var(--primary-transition);
 
   &::placeholder {
     color: ${(p) => p.theme.colors.greyColor};
+  }
+
+  &:hover,
+  &:focus {
+    outline: 1px solid #affc41;
   }
 `;
 
@@ -128,14 +140,16 @@ export const ModalBtn = styled.button`
   letter-spacing: -0.02em;
   padding: 1.2rem;
   border-radius: 0.4rem;
-  background-color: ${(p) => p.theme.colors.whiteColor};
-  color: ${(p) => p.theme.colors.darkTextColor};
+  background-color: transparent;
+  color: ${(p) => p.theme.colors.whiteColor};
+  outline: 1px solid ${(p) => p.theme.colors.whiteColor};
   cursor: pointer;
   transition: all var(--primary-transition);
 
   &:hover {
     background-color: ${(p) => p.theme.colors.btnHoverColor};
     color: ${(p) => p.theme.colors.whiteColor};
+    outline: 1px solid transparent;
   }
 `;
 
