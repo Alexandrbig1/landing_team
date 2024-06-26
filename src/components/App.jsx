@@ -44,6 +44,7 @@ const theme = {
       modalColor: "#333d29",
       greyColor: "#7f7f7f",
       burgerOverlay: "rgb(250, 250, 250,0.9)",
+      boxShadowColor: "#affc41",
     },
   },
   dark: {
@@ -70,6 +71,7 @@ const theme = {
       modalColor: "#333d29",
       greyColor: "#7f7f7f",
       burgerOverlay: "rgb(36, 36, 36,0.9)",
+      boxShadowColor: "#affc41",
     },
   },
 };

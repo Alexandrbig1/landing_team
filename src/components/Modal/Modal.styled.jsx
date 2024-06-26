@@ -11,9 +11,9 @@ export const ModalDiv = styled(Modal)`
   transform: translateY(-50%);
   margin: 0 auto;
   border-radius: 2rem;
-  padding: 4.8rem 1.2rem;
+  padding: 4.8rem 2.4rem;
   width: 100%;
-  max-width: 480px;
+  max-width: 95%;
   height: auto;
   background-color: ${(p) => p.theme.colors.modalColor};
   overflow-y: scroll;
@@ -24,10 +24,19 @@ export const ModalDiv = styled(Modal)`
   align-items: center;
   gap: 3.6rem;
 
+  @media (min-width: 375px) {
+    max-width: 360px;
+  }
+
+  @media (min-width: 420px) {
+    max-width: 420px;
+  }
+
   @media (min-width: 768px) {
     left: unset;
     right: 2.4rem;
     padding: 4.8rem 2.4rem;
+    max-width: 480px;
   }
 
   @media (min-width: 1440px) {
@@ -100,7 +109,8 @@ export const ModalInput = styled.input`
 
   &:hover,
   &:focus {
-    outline: 1px solid #affc41;
+    box-shadow: ${({ theme }) => theme.colors.boxShadowColor} 0px 2px 4px 0px,
+      ${({ theme }) => theme.colors.boxShadowColor} 0px -2px 4px 0px;
   }
 `;
 
@@ -125,7 +135,8 @@ export const ModalTextArea = styled.textarea`
 
   &:hover,
   &:focus {
-    outline: 1px solid #affc41;
+    box-shadow: ${({ theme }) => theme.colors.boxShadowColor} 0px 2px 4px 0px,
+      ${({ theme }) => theme.colors.boxShadowColor} 0px -2px 4px 0px;
   }
 `;
 
