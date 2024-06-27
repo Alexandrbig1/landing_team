@@ -13,7 +13,7 @@ export const ModalDiv = styled(Modal)`
   border-radius: 2rem;
   padding: 4.8rem 2.4rem;
   width: 100%;
-  max-width: 95%;
+  max-width: 90%;
   height: auto;
   background-color: ${(p) => p.theme.colors.modalColor};
   overflow-y: scroll;
@@ -24,11 +24,7 @@ export const ModalDiv = styled(Modal)`
   align-items: center;
   gap: 3.6rem;
 
-  @media (min-width: 375px) {
-    max-width: 360px;
-  }
-
-  @media (min-width: 420px) {
+  @media (min-width: 480px) {
     max-width: 420px;
   }
 

@@ -1,4 +1,4 @@
-const __vite__fileDeps=["assets/Team-CxcRml4I.js","assets/index-M8GEpXqN.js","assets/Projects-D5hMGydt.js","assets/Projects-wjhWB3DI.css"],__vite__mapDeps=i=>i.map(i=>__vite__fileDeps[i]);
+const __vite__fileDeps=["assets/Team-r2lILicQ.js","assets/index-B9vIoDuZ.js","assets/Projects-D7eb5ovU.js","assets/Projects-wjhWB3DI.css"],__vite__mapDeps=i=>i.map(i=>__vite__fileDeps[i]);
 var YS=Object.defineProperty;var qS=(e,t,n)=>t in e?YS(e,t,{enumerable:!0,configurable:!0,writable:!0,value:n}):e[t]=n;var nr=(e,t,n)=>(qS(e,typeof t!="symbol"?t+"":t,n),n);function C0(e,t){for(var n=0;n<t.length;n++){const r=t[n];if(typeof r!="string"&&!Array.isArray(r)){for(const i in r)if(i!=="default"&&!(i in e)){const o=Object.getOwnPropertyDescriptor(r,i);o&&Object.defineProperty(e,i,o.get?o:{enumerable:!0,get:()=>r[i]})}}}return Object.freeze(Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}))}(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const i of document.querySelectorAll('link[rel="modulepreload"]'))r(i);new MutationObserver(i=>{for(const o of i)if(o.type==="childList")for(const s of o.addedNodes)s.tagName==="LINK"&&s.rel==="modulepreload"&&r(s)}).observe(document,{childList:!0,subtree:!0});function n(i){const o={};return i.integrity&&(o.integrity=i.integrity),i.referrerPolicy&&(o.referrerPolicy=i.referrerPolicy),i.crossOrigin==="use-credentials"?o.credentials="include":i.crossOrigin==="anonymous"?o.credentials="omit":o.credentials="same-origin",o}function r(i){if(i.ep)return;i.ep=!0;const o=n(i);fetch(i.href,o)}})();function os(e){return e&&e.__esModule&&Object.prototype.hasOwnProperty.call(e,"default")?e.default:e}function QS(e){if(e.__esModule)return e;var t=e.default;if(typeof t=="function"){var n=function r(){return this instanceof r?Reflect.construct(t,arguments,this.constructor):t.apply(this,arguments)};n.prototype=t.prototype}else n={};return Object.defineProperty(n,"__esModule",{value:!0}),Object.keys(e).forEach(function(r){var i=Object.getOwnPropertyDescriptor(e,r);Object.defineProperty(n,r,i.get?i:{enumerable:!0,get:function(){return e[r]}})}),n}var E0={exports:{}},Sc={},k0={exports:{}},Ce={};/**
  * @license React
  * react.production.min.js
@@ -289,9 +289,9 @@ https://fb.me/react-async-component-lifecycle-hooks`)}if(typeof e.getDerivedStat
   transform: translateY(-50%);
   margin: 0 auto;
   border-radius: 2rem;
-  padding: 4.8rem 1.2rem;
+  padding: 4.8rem 2.4rem;
   width: 100%;
-  max-width: 480px;
+  max-width: 95%;
   height: auto;
   background-color: ${e=>e.theme.colors.modalColor};
   overflow-y: scroll;
@@ -302,10 +302,19 @@ https://fb.me/react-async-component-lifecycle-hooks`)}if(typeof e.getDerivedStat
   align-items: center;
   gap: 3.6rem;
 
+  @media (min-width: 375px) {
+    max-width: 360px;
+  }
+
+  @media (min-width: 420px) {
+    max-width: 420px;
+  }
+
   @media (min-width: 768px) {
     left: unset;
     right: 2.4rem;
     padding: 4.8rem 2.4rem;
+    max-width: 480px;
   }
 
   @media (min-width: 1440px) {
@@ -366,7 +375,8 @@ https://fb.me/react-async-component-lifecycle-hooks`)}if(typeof e.getDerivedStat
 
   &:hover,
   &:focus {
-    outline: 1px solid #affc41;
+    box-shadow: ${({theme:e})=>e.colors.boxShadowColor} 0px 2px 4px 0px,
+      ${({theme:e})=>e.colors.boxShadowColor} 0px -2px 4px 0px;
   }
 `,xA=oe.textarea`
   border: none;
@@ -389,7 +399,8 @@ https://fb.me/react-async-component-lifecycle-hooks`)}if(typeof e.getDerivedStat
 
   &:hover,
   &:focus {
-    outline: 1px solid #affc41;
+    box-shadow: ${({theme:e})=>e.colors.boxShadowColor} 0px 2px 4px 0px,
+      ${({theme:e})=>e.colors.boxShadowColor} 0px -2px 4px 0px;
   }
 `,wA=oe.button`
   border: none;
@@ -869,4 +880,4 @@ https://fb.me/react-async-component-lifecycle-hooks`)}if(typeof e.getDerivedStat
   letter-spacing: -0.02em;
   color: ${({theme:e})=>e.colors.footerTextColor};
   white-space: nowrap;
-`;function kM(){return M.jsx(vM,{children:M.jsx(Wn.div,{initial:{opacity:0},animate:{opacity:1},transition:{duration:1.5},children:M.jsxs(SM,{children:[M.jsxs(_M,{children:[M.jsxs(TM,{children:[M.jsx(_0,{children:"All Rights Reserved"}),M.jsx(EM,{})]}),M.jsxs(CM,{children:[M.jsx(hM,{}),M.jsx(_0,{children:"Seventh Sense"})]})]}),M.jsx(HS,{})]})})})}function PM(){const{toggleMenu:e,menuOpen:t}=Xc();return M.jsx(QA,{$isOpen:t,children:M.jsxs(eM,{children:[M.jsx(JA,{onClick:e}),M.jsx("nav",{children:M.jsxs(tM,{children:[M.jsx(af,{onClick:e,children:M.jsxs(lf,{to:"/landing_team/",end:!0,children:[M.jsx(wu,{}),"Home"]})}),M.jsx(af,{onClick:e,children:M.jsxs(lf,{to:"team",end:!0,children:[M.jsx(wu,{}),"Team"]})}),M.jsx(af,{onClick:e,children:M.jsxs(lf,{to:"projects",end:!0,children:[M.jsx(wu,{}),"Projects"]})})]})}),M.jsx(nM,{children:M.jsx(HS,{color:"#7289d9"})})]})})}function bM(){return M.jsxs("div",{children:[M.jsx(lM,{}),M.jsx(PM,{}),M.jsx(xM,{children:M.jsx(T.Suspense,{fallback:M.jsx(A3,{}),children:M.jsx(g3,{})})}),M.jsx(kM,{})]})}const RM=T.lazy(()=>Vc(()=>import("./Home-qoJrdG65.js"),[])),OM=T.lazy(()=>Vc(()=>import("./Team-CxcRml4I.js"),__vite__mapDeps([0,1]))),AM=T.lazy(()=>Vc(()=>import("./Projects-D5hMGydt.js"),__vite__mapDeps([2,1,3]))),MM=T.lazy(()=>Vc(()=>import("./NotFound-D7efuBbD.js"),[])),T0={light:{colors:{mainBgColor:"#606c38",mainBgColorRev:"#283618",accentColor:"#283618",accentLightColor:"#606c38",btnHoverColor:"#588157",mainBgColorLowOp:"#606c3830",mainTextColor:"#e7e5e4",darkTextColor:"#292524",mainTextColorRev:"#292524",secondaryTextColor:"#020617",teamSecondaryTextColor:"#f5f5f590",footerTextColor:"rgba(239, 237, 232, 0.3)",headerTextColor:"#e7e5e4",headerTextColorLowOp:"rgba(2, 6, 23, 0.1)",headerBgColor:"#f5f5f5",whiteColor:"#f5f5f5",whiteColorLowOp:"#f5f5f540",thumbBgColor:"#58815730",thumbColor:"#58815750",modalColor:"#333d29",greyColor:"#7f7f7f",burgerOverlay:"rgb(250, 250, 250,0.9)"}},dark:{colors:{mainBgColor:"#283618",mainBgColorRev:"#606c38",accentColor:"#283618",accentLightColor:"#606c38",btnHoverColor:"#588157",mainBgColorLowOp:"#28361830",mainTextColor:"#292524",darkTextColor:"#292524",mainTextColorRev:"#e7e5e4",secondaryTextColor:"#f5f5f5",teamSecondaryTextColor:"#f5f5f590",footerTextColor:"rgba(239, 237, 232, 0.3)",headerTextColor:"#e7e5e4",headerTextColorLowOp:"rgba(245, 245, 245, 0.1)",headerBgColor:"#f5f5f5",whiteColor:"#f5f5f5",whiteColorLowOp:"#f5f5f540",thumbBgColor:"#58815730",thumbColor:"#58815750",modalColor:"#333d29",greyColor:"#7f7f7f",burgerOverlay:"rgb(36, 36, 36,0.9)"}}};function LM(){const{isDarkTheme:e}=Xc(),t=LA(_h(M.jsxs(so,{path:"/landing_team/",element:M.jsx(bM,{}),children:[M.jsx(so,{index:!0,element:M.jsx(RM,{})}),M.jsx(so,{path:"team",element:M.jsx(OM,{})}),M.jsx(so,{path:"projects",element:M.jsx(AM,{})}),M.jsx(so,{path:"*",element:M.jsx(MM,{})})]})));return M.jsxs(PE,{theme:e?T0.dark:T0.light,children:[M.jsx(ok,{}),M.jsx(ik,{}),M.jsx(KR,{}),M.jsx(zA,{router:t})]})}jS.setAppElement("#root");ff.createRoot(document.getElementById("root")).render(M.jsx(Q.StrictMode,{children:M.jsx(qb,{children:M.jsx(LM,{})})}));export{vM as C,BM as F,mt as G,pw as H,WA as L,UM as P,Q as R,Sn as a,rk as b,jM as c,zM as d,VM as e,Xp as f,FM as g,$M as h,M as j,Wn as m,oe as p,T as r};
+`;function kM(){return M.jsx(vM,{children:M.jsx(Wn.div,{initial:{opacity:0},animate:{opacity:1},transition:{duration:1.5},children:M.jsxs(SM,{children:[M.jsxs(_M,{children:[M.jsxs(TM,{children:[M.jsx(_0,{children:"All Rights Reserved"}),M.jsx(EM,{})]}),M.jsxs(CM,{children:[M.jsx(hM,{}),M.jsx(_0,{children:"Seventh Sense"})]})]}),M.jsx(HS,{})]})})})}function PM(){const{toggleMenu:e,menuOpen:t}=Xc();return M.jsx(QA,{$isOpen:t,children:M.jsxs(eM,{children:[M.jsx(JA,{onClick:e}),M.jsx("nav",{children:M.jsxs(tM,{children:[M.jsx(af,{onClick:e,children:M.jsxs(lf,{to:"/landing_team/",end:!0,children:[M.jsx(wu,{}),"Home"]})}),M.jsx(af,{onClick:e,children:M.jsxs(lf,{to:"team",end:!0,children:[M.jsx(wu,{}),"Team"]})}),M.jsx(af,{onClick:e,children:M.jsxs(lf,{to:"projects",end:!0,children:[M.jsx(wu,{}),"Projects"]})})]})}),M.jsx(nM,{children:M.jsx(HS,{color:"#7289d9"})})]})})}function bM(){return M.jsxs("div",{children:[M.jsx(lM,{}),M.jsx(PM,{}),M.jsx(xM,{children:M.jsx(T.Suspense,{fallback:M.jsx(A3,{}),children:M.jsx(g3,{})})}),M.jsx(kM,{})]})}const RM=T.lazy(()=>Vc(()=>import("./Home-BV8dA2yo.js"),[])),OM=T.lazy(()=>Vc(()=>import("./Team-r2lILicQ.js"),__vite__mapDeps([0,1]))),AM=T.lazy(()=>Vc(()=>import("./Projects-D7eb5ovU.js"),__vite__mapDeps([2,1,3]))),MM=T.lazy(()=>Vc(()=>import("./NotFound-2hpJwTIe.js"),[])),T0={light:{colors:{mainBgColor:"#606c38",mainBgColorRev:"#283618",accentColor:"#283618",accentLightColor:"#606c38",btnHoverColor:"#588157",mainBgColorLowOp:"#606c3830",mainTextColor:"#e7e5e4",darkTextColor:"#292524",mainTextColorRev:"#292524",secondaryTextColor:"#020617",teamSecondaryTextColor:"#f5f5f590",footerTextColor:"rgba(239, 237, 232, 0.3)",headerTextColor:"#e7e5e4",headerTextColorLowOp:"rgba(2, 6, 23, 0.1)",headerBgColor:"#f5f5f5",whiteColor:"#f5f5f5",whiteColorLowOp:"#f5f5f540",thumbBgColor:"#58815730",thumbColor:"#58815750",modalColor:"#333d29",greyColor:"#7f7f7f",burgerOverlay:"rgb(250, 250, 250,0.9)",boxShadowColor:"#affc41"}},dark:{colors:{mainBgColor:"#283618",mainBgColorRev:"#606c38",accentColor:"#283618",accentLightColor:"#606c38",btnHoverColor:"#588157",mainBgColorLowOp:"#28361830",mainTextColor:"#292524",darkTextColor:"#292524",mainTextColorRev:"#e7e5e4",secondaryTextColor:"#f5f5f5",teamSecondaryTextColor:"#f5f5f590",footerTextColor:"rgba(239, 237, 232, 0.3)",headerTextColor:"#e7e5e4",headerTextColorLowOp:"rgba(245, 245, 245, 0.1)",headerBgColor:"#f5f5f5",whiteColor:"#f5f5f5",whiteColorLowOp:"#f5f5f540",thumbBgColor:"#58815730",thumbColor:"#58815750",modalColor:"#333d29",greyColor:"#7f7f7f",burgerOverlay:"rgb(36, 36, 36,0.9)",boxShadowColor:"#affc41"}}};function LM(){const{isDarkTheme:e}=Xc(),t=LA(_h(M.jsxs(so,{path:"/landing_team/",element:M.jsx(bM,{}),children:[M.jsx(so,{index:!0,element:M.jsx(RM,{})}),M.jsx(so,{path:"team",element:M.jsx(OM,{})}),M.jsx(so,{path:"projects",element:M.jsx(AM,{})}),M.jsx(so,{path:"*",element:M.jsx(MM,{})})]})));return M.jsxs(PE,{theme:e?T0.dark:T0.light,children:[M.jsx(ok,{}),M.jsx(ik,{}),M.jsx(KR,{}),M.jsx(zA,{router:t})]})}jS.setAppElement("#root");ff.createRoot(document.getElementById("root")).render(M.jsx(Q.StrictMode,{children:M.jsx(qb,{children:M.jsx(LM,{})})}));export{vM as C,BM as F,mt as G,pw as H,WA as L,UM as P,Q as R,Sn as a,rk as b,jM as c,zM as d,VM as e,Xp as f,FM as g,$M as h,M as j,Wn as m,oe as p,T as r};
