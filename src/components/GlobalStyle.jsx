@@ -8,69 +8,60 @@ export const GlobalStyle = createGlobalStyle`
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  html {
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
 
-    scroll-behavior: smooth;
-    overflow-x: hidden;
+body {
+  font-family: ${primaryFont};
+  margin: 0 auto;
+  scroll-behavior: smooth;
+  min-height: 100%;
+  overflow-x: hidden;
+}
 
-    /* @media(min-width:1440px) {
-    font-size: 62.5%;
-  } */
-  }
+p {
+  margin: 0;
+  padding: 0;
+}
 
-  body {
-    font-family: ${primaryFont};
-    margin: 0 auto;
-    scroll-behavior: smooth;
-    min-height: 100%;
-    overflow-x: hidden;
-  }
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  padding: 0;
+}
 
-  p {
-    margin: 0;
-    padding: 0;
-  }
+ul {
+  list-style: none;
+}
 
-  h1{
-    margin: 0;
-    padding: 0;
-  }
+li {
+  padding: 0;
+  margin: 0;
+}
 
-  h2 {
-    margin: 0;
-    padding: 0;
-  }
-  
-  h3 {
-    margin: 0;
-    padding: 0;
-  }
-  h4 {
-    margin: 0;
-    padding: 0;
-  }
-  h5 {
-    margin: 0;
-    padding: 0;
-  }
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
 
-  ul {
-    list-style: none;
-  }
+button {
+  font-family: inherit;
+  color: currentColor;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
 
-  li {
-    padding: 0;
-    margin: 0;
-  }
-
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-  `;
+input, textarea {
+  font-family: inherit;
+}
+`;

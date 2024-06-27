@@ -25,14 +25,14 @@ export const ModalDiv = styled(Modal)`
   gap: 3.6rem;
 
   @media (min-width: 480px) {
-    max-width: 420px;
+    max-width: 42rem;
   }
 
   @media (min-width: 768px) {
     left: unset;
     right: 2.4rem;
     padding: 4.8rem 2.4rem;
-    max-width: 480px;
+    max-width: 48rem;
   }
 
   @media (min-width: 1440px) {
