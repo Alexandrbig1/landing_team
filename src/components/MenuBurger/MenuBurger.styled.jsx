@@ -25,9 +25,11 @@ export const MenuBurgerContainer = styled.div`
 `;
 
 export const Menu = styled.div`
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -49,13 +51,14 @@ export const IconMenu = styled(TiThMenu)`
 export const CloseBurgerMenu = styled(IoMdClose)`
   color: ${(p) => p.theme.colors.accentLightColor};
   font-size: 2.4rem;
-  top: 1.6rem;
+  top: -3.2rem;
   right: 1.6rem;
   position: absolute;
   cursor: pointer;
   transition: 0.3s linear;
 
-  &:hover {
+  &:hover,
+  &:focus {
     transform: rotate(90deg);
     color: ${(p) => p.theme.colors.accentColor};
   }
@@ -68,14 +71,13 @@ export const CloseBurgerMenu = styled(IoMdClose)`
 export const BurgerContainer = styled.div`
   position: relative;
   left: 0;
-  top: 10rem;
+  top: 0;
   width: 100%;
-  max-width: 311px;
+  max-width: 312px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 4.8rem;
-
   padding: 4rem;
   color: ${(p) => p.theme.colors.mainTextColor};
   border-radius: 20px;
