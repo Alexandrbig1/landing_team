@@ -105,7 +105,7 @@ export const ModalInput = styled.input`
 
   &:hover,
   &:focus,
-  &:focus-within {
+  &:active {
     box-shadow: ${({ theme }) => theme.colors.boxShadowColor} 0px 2px 4px 0px,
       ${({ theme }) => theme.colors.boxShadowColor} 0px -2px 4px 0px;
   }
@@ -132,7 +132,7 @@ export const ModalTextArea = styled.textarea`
 
   &:hover,
   &:focus,
-  &:focus-within {
+  &:active {
     box-shadow: ${({ theme }) => theme.colors.boxShadowColor} 0px 2px 4px 0px,
       ${({ theme }) => theme.colors.boxShadowColor} 0px -2px 4px 0px;
   }
@@ -155,26 +155,37 @@ export const ModalBtn = styled.button`
   cursor: pointer;
   transition: all var(--primary-transition);
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: ${(p) => p.theme.colors.btnHoverColor};
     color: ${(p) => p.theme.colors.whiteColor};
     outline: 1px solid transparent;
   }
 `;
 
-export const CloseModal = styled(IoMdClose)`
+export const CloseModal = styled.button`
+  border: none;
+  outline: none;
+  background: none;
+  width: 2.4rem;
+  height: 2.4rem;
   color: ${(p) => p.theme.colors.accentLightColor};
-  font-size: 2.4rem;
   top: 1.6rem;
   right: 1.6rem;
   position: absolute;
   cursor: pointer;
-  transition: 0.3s linear;
+  transition: transform var(--primary-transition),
+    scale var(--primary-transition);
 
-  &:hover {
-    transform: rotate(90deg);
+  &:hover,
+  &:focus {
+    transform: rotate(90deg) scale(1.2);
     color: ${(p) => p.theme.colors.btnHoverColor};
   }
+`;
+
+export const CloseIcon = styled(IoMdClose)`
+  font-size: 2.4rem;
 `;
 
 export const HeaderIconsModal = styled.span`

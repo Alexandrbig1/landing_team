@@ -5,6 +5,7 @@ import { toast } from "react-toastify";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { commonToastOptions } from "../../helpers/toastOptions";
 import {
+  CloseIcon,
   CloseModal,
   Form,
   ModalBtn,
@@ -85,7 +86,9 @@ function ModalWindow({ modalIsOpen, setIsOpen }) {
       style={customStyles}
       contentLabel="Contact Modal Window"
     >
-      <CloseModal onClick={closeModal} />
+      <CloseModal type="button" onClick={closeModal} aria-label="Close modal">
+        <CloseIcon />
+      </CloseModal>
       <ModalTitleWrapper>
         <ModalTitle>Let's work together!</ModalTitle>
         <ModalText>
