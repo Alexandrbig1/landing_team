@@ -23,7 +23,6 @@ export const TeamWrapper = styled.section`
   align-items: center;
   width: 100%;
   height: auto;
-  /* overflow: scroll; */
   gap: 3.2rem;
   margin: 0 auto;
   border-radius: 1.2rem;
@@ -34,7 +33,6 @@ export const TeamWrapper = styled.section`
   @media (min-width: 1440px) {
     max-height: 100vh;
     height: 100%;
-    /* width: 90%; */
     margin-top: 0;
     margin-bottom: 0;
     overflow: hidden;
@@ -98,14 +96,15 @@ export const TeamSocialLinkWeb = styled.a`
     cursor: pointer;
   }
 
-  &:hover {
+  @media (min-width: 1440px) {
+    opacity: 0;
+  }
+
+  &:hover,
+  &:focus {
     ${TeamSocialWeb} {
       animation: ${scale} 1s ease-in-out infinite;
     }
-  }
-
-  @media (min-width: 1440px) {
-    opacity: 0;
   }
 `;
 
@@ -130,7 +129,8 @@ export const TeamSocialLinkGitHub = styled.a`
     cursor: pointer;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     ${TeamSocialGitHub} {
       animation: ${scale} 1s ease-in-out infinite;
     }
@@ -162,7 +162,8 @@ export const TeamSocialLinkTwitter = styled.a`
     cursor: pointer;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     ${TeamSocialTwitter} {
       animation: ${scale} 1s ease-in-out infinite;
     }
@@ -192,7 +193,8 @@ export const TeamSocialLinkLinkedin = styled.a`
   &:hover {
     cursor: pointer;
   }
-  &:hover {
+  &:hover,
+  &:focus {
     ${TeamSocialLinkedin} {
       animation: ${scale} 1s ease-in-out infinite;
     }
@@ -232,10 +234,7 @@ export const TeamProf = styled.span`
 `;
 
 export const TeamImgWrapper = styled.div`
-  /* max-width: 26rem; */
   width: 100%;
-  /* width: 26rem; */
-  height: auto;
   height: 100%;
   border-radius: 1.2rem;
   padding: 1.2rem;
@@ -246,27 +245,31 @@ export const TeamImgWrapper = styled.div`
   gap: 2.4rem;
   position: relative;
 
-  &:hover {
+  &:hover,
+  &:focus {
     ${TeamSocialLinkWeb} {
       opacity: 1;
     }
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     ${TeamSocialLinkGitHub} {
       opacity: 1;
       animation-delay: 0.25s;
     }
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     ${TeamSocialLinkTwitter} {
       opacity: 1;
       animation-delay: 0.5s;
     }
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     ${TeamSocialLinkLinkedin} {
       opacity: 1;
       animation-delay: 0.75s;

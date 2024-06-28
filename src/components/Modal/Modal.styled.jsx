@@ -104,7 +104,8 @@ export const ModalInput = styled.input`
   }
 
   &:hover,
-  &:focus {
+  &:focus,
+  &:focus-within {
     box-shadow: ${({ theme }) => theme.colors.boxShadowColor} 0px 2px 4px 0px,
       ${({ theme }) => theme.colors.boxShadowColor} 0px -2px 4px 0px;
   }
@@ -130,7 +131,8 @@ export const ModalTextArea = styled.textarea`
   }
 
   &:hover,
-  &:focus {
+  &:focus,
+  &:focus-within {
     box-shadow: ${({ theme }) => theme.colors.boxShadowColor} 0px 2px 4px 0px,
       ${({ theme }) => theme.colors.boxShadowColor} 0px -2px 4px 0px;
   }
