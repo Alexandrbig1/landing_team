@@ -1,15 +1,8 @@
 import SocialIcons from "../SocialIcons/SocialIcons";
-import Year from "../Year/Year";
 import { motion } from "framer-motion";
 import { Container } from "../layout";
-import {
-  FooterRightsWrapper,
-  FooterText,
-  FooterWrapper,
-  MarkWrapper,
-  TradeMark,
-  YearWrapper,
-} from "./Footer.styled";
+import FooterRightsText from "../UI/FooterRightsText/FooterRightsText";
+import { FooterWrapper } from "./Footer.styled";
 
 function Footer() {
   return (
@@ -20,16 +13,7 @@ function Footer() {
         transition={{ duration: 1.5 }}
       >
         <FooterWrapper>
-          <FooterRightsWrapper>
-            <MarkWrapper>
-              <FooterText>All Rights Reserved</FooterText>
-              <TradeMark />
-            </MarkWrapper>
-            <YearWrapper>
-              <Year />
-              <FooterText>Seventh Sense</FooterText>
-            </YearWrapper>
-          </FooterRightsWrapper>
+          <FooterRightsText />
           <SocialIcons />
         </FooterWrapper>
       </motion.div>

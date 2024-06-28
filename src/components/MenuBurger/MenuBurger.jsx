@@ -1,5 +1,6 @@
 import SocialIcons from "../SocialIcons/SocialIcons";
 import { useTheme } from "../../context/ThemeContext";
+import FooterRightsText from "../UI/FooterRightsText/FooterRightsText";
 import {
   BurgerContainer,
   CloseBurgerMenu,
@@ -9,6 +10,8 @@ import {
   MenuBurgerText,
   MenuBurgerLinkIcon,
   MenuBurgerItems,
+  BurgerMenuFooterWrapper,
+  CloseBurgerIcon,
 } from "./MenuBurger.styled";
 
 // eslint-disable-next-line react/prop-types
@@ -17,8 +20,14 @@ export default function MenuBurger() {
 
   return (
     <Menu $isOpen={menuOpen}>
+      <CloseBurgerMenu
+        type="button"
+        aria-label="Close Menu"
+        onClick={toggleMenu}
+      >
+        <CloseBurgerIcon />
+      </CloseBurgerMenu>
       <BurgerContainer>
-        <CloseBurgerMenu onClick={toggleMenu} />
         <nav>
           <BurgerMenuItems>
             <MenuBurgerItems onClick={toggleMenu}>
@@ -41,10 +50,13 @@ export default function MenuBurger() {
             </MenuBurgerItems>
           </BurgerMenuItems>
         </nav>
+      </BurgerContainer>
+      <BurgerMenuFooterWrapper>
         <BurgerLogoWrapper>
           <SocialIcons color="#7289d9" />
         </BurgerLogoWrapper>
-      </BurgerContainer>
+        <FooterRightsText />
+      </BurgerMenuFooterWrapper>
     </Menu>
   );
 }

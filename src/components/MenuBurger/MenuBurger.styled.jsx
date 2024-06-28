@@ -48,10 +48,12 @@ export const IconMenu = styled(TiThMenu)`
   color: ${(p) => p.theme.colors.whiteColor};
 `;
 
-export const CloseBurgerMenu = styled(IoMdClose)`
+export const CloseBurgerMenu = styled.button`
+  border: none;
+  outline: none;
+  background: none;
   color: ${(p) => p.theme.colors.accentLightColor};
-  font-size: 2.4rem;
-  top: -3.2rem;
+  top: 3.2rem;
   right: 1.6rem;
   position: absolute;
   cursor: pointer;
@@ -66,6 +68,10 @@ export const CloseBurgerMenu = styled(IoMdClose)`
   @media (min-width: 768px) {
     font-size: 3.6rem;
   }
+`;
+
+export const CloseBurgerIcon = styled(IoMdClose)`
+  font-size: 2.8rem;
 `;
 
 export const BurgerContainer = styled.div`
@@ -128,4 +134,18 @@ export const MenuBurgerText = styled(NavLink)`
       opacity: 1;
     }
   }
+`;
+
+export const BurgerMenuFooterWrapper = styled.div`
+  position: absolute;
+  bottom: 3.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
 `;

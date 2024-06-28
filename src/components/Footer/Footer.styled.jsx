@@ -50,6 +50,14 @@ export const YearWrapper = styled.div`
   display: flex;
   align-items: center;
   gap: 0.4rem;
+
+  font-family: ${primaryFont};
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.3444;
+  letter-spacing: -0.02em;
+  color: ${({ theme }) => theme.colors.footerTextColor};
+  white-space: nowrap;
 `;
 
 export const TradeMark = styled(PiTrademarkRegisteredFill)`
