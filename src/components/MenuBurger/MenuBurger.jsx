@@ -2,6 +2,7 @@ import SocialIcons from "../SocialIcons/SocialIcons";
 import { useTheme } from "../../context/ThemeContext";
 import FooterRightsText from "../UI/FooterRightsText/FooterRightsText";
 import { v4 as uuidv4 } from "uuid";
+import { motion } from "framer-motion";
 import {
   BurgerContainer,
   CloseBurgerMenu,
@@ -73,9 +74,25 @@ export default function MenuBurger() {
       </BurgerContainer>
       <BurgerMenuFooterWrapper>
         <BurgerLogoWrapper>
-          <SocialIcons color="#7289d9" />
+          {menuOpen && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ type: "spring", delay: 0.5 }}
+            >
+              <SocialIcons color="#7289d9" />
+            </motion.div>
+          )}
         </BurgerLogoWrapper>
-        <FooterRightsText burger />
+        {menuOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ type: "spring", delay: 1 }}
+          >
+            <FooterRightsText burger />
+          </motion.div>
+        )}
       </BurgerMenuFooterWrapper>
     </Menu>
   );
