@@ -1,6 +1,7 @@
 import SocialIcons from "../SocialIcons/SocialIcons";
 import { useTheme } from "../../context/ThemeContext";
 import FooterRightsText from "../UI/FooterRightsText/FooterRightsText";
+import { v4 as uuidv4 } from "uuid";
 import {
   BurgerContainer,
   CloseBurgerMenu,
@@ -18,6 +19,29 @@ import {
 export default function MenuBurger() {
   const { toggleMenu, menuOpen } = useTheme();
 
+  const menuVars = (index) => ({
+    initial: {
+      x: "-100%",
+      opacity: 0,
+    },
+    animate: {
+      x: "0%",
+      opacity: 1,
+      transition: {
+        duration: 1,
+        delay: 0.5 * index,
+        ease: [0.12, 0, 0.39, 0],
+        type: "spring",
+      },
+    },
+  });
+
+  const menuItems = [
+    { to: "/landing_team/", text: "Home" },
+    { to: "team", text: "Team" },
+    { to: "projects", text: "Projects" },
+  ];
+
   return (
     <Menu $isOpen={menuOpen}>
       <CloseBurgerMenu
@@ -30,24 +54,20 @@ export default function MenuBurger() {
       <BurgerContainer>
         <nav>
           <BurgerMenuItems>
-            <MenuBurgerItems onClick={toggleMenu}>
-              <MenuBurgerText to="/landing_team/" end>
-                <MenuBurgerLinkIcon />
-                Home
-              </MenuBurgerText>
-            </MenuBurgerItems>
-            <MenuBurgerItems onClick={toggleMenu}>
-              <MenuBurgerText to="team" end>
-                <MenuBurgerLinkIcon />
-                Team
-              </MenuBurgerText>
-            </MenuBurgerItems>
-            <MenuBurgerItems onClick={toggleMenu}>
-              <MenuBurgerText to="projects" end>
-                <MenuBurgerLinkIcon />
-                Projects
-              </MenuBurgerText>
-            </MenuBurgerItems>
+            {menuItems.map((menuItemData, idx) => (
+              <MenuBurgerItems
+                key={uuidv4()}
+                onClick={toggleMenu}
+                variants={menuVars(idx)}
+                initial="initial"
+                animate="animate"
+              >
+                <MenuBurgerText to={menuItemData.to} end>
+                  <MenuBurgerLinkIcon />
+                  {menuItemData.text}
+                </MenuBurgerText>
+              </MenuBurgerItems>
+            ))}
           </BurgerMenuItems>
         </nav>
       </BurgerContainer>
@@ -55,7 +75,7 @@ export default function MenuBurger() {
         <BurgerLogoWrapper>
           <SocialIcons color="#7289d9" />
         </BurgerLogoWrapper>
-        <FooterRightsText />
+        <FooterRightsText burgerMenu={true} />
       </BurgerMenuFooterWrapper>
     </Menu>
   );

@@ -4,6 +4,7 @@ import { IoMdClose } from "react-icons/io";
 import { primaryFont } from "../fonts";
 import { NavLink } from "react-router-dom";
 import { FaLongArrowAltRight } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 export const IconMenuWrapper = styled.div`
   cursor: pointer;
@@ -110,7 +111,7 @@ export const MenuBurgerLinkIcon = styled(FaLongArrowAltRight)`
   transition: all var(--primary-transition);
 `;
 
-export const MenuBurgerItems = styled.li`
+export const MenuBurgerItems = styled(motion.li)`
   display: flex;
   align-items: center;
   gap: 1.2rem;

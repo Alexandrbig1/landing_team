@@ -3,7 +3,6 @@ import { PiTrademarkRegisteredFill } from "react-icons/pi";
 import { primaryFont } from "../fonts";
 
 export const FooterWrapper = styled.footer`
-  color: ${({ theme }) => theme.colors.footerTextColor};
   padding: 1.2rem;
   width: 100%;
   display: flex;
@@ -56,12 +55,19 @@ export const YearWrapper = styled.div`
   font-size: 1.6rem;
   line-height: 1.3444;
   letter-spacing: -0.02em;
-  color: ${({ theme }) => theme.colors.footerTextColor};
+  /* color: ${({ theme }) => theme.colors.footerTextColor}; */
+  color: ${(p) =>
+    p?.burgerMenu
+      ? p.theme.colors.burgerMenuFooterTextColor
+      : p.theme.colors.footerTextColor};
   white-space: nowrap;
 `;
 
 export const TradeMark = styled(PiTrademarkRegisteredFill)`
-  color: ${({ theme }) => theme.colors.footerTextColor};
+  color: ${(p) =>
+    p?.burgerMenu
+      ? p.theme.colors.burgerMenuFooterTextColor
+      : p.theme.colors.footerTextColor};
   font-size: 1.6rem;
 `;
 
@@ -71,6 +77,9 @@ export const FooterText = styled.p`
   font-size: 1.6rem;
   line-height: 1.3444;
   letter-spacing: -0.02em;
-  color: ${({ theme }) => theme.colors.footerTextColor};
+  color: ${(p) =>
+    p?.burgerMenu
+      ? p.theme.colors.burgerMenuFooterTextColor
+      : p.theme.colors.footerTextColor};
   white-space: nowrap;
 `;

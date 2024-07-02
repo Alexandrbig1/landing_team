@@ -61,6 +61,7 @@
     "react-toastify": "^10.0.5",
     "styled-components": "^6.1.11",
     "swiper": "^11.1.4",
+    "uuid": "^10.0.0",
     "yup": "^1.4.0",
     "zod": "^3.23.8"
   },

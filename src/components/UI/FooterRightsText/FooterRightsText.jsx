@@ -7,16 +7,17 @@ import {
   YearWrapper,
 } from "../../Footer/Footer.styled";
 
-function FooterRightsText() {
+// eslint-disable-next-line react/prop-types
+function FooterRightsText({ burgerMenu }) {
   return (
     <FooterRightsWrapper>
       <MarkWrapper>
-        <FooterText>All Rights Reserved</FooterText>
-        <TradeMark />
+        <FooterText burgerMenu={burgerMenu}>All Rights Reserved</FooterText>
+        <TradeMark burgerMenu={burgerMenu} />
       </MarkWrapper>
-      <YearWrapper>
+      <YearWrapper burgerMenu={burgerMenu}>
         <Year />
-        <FooterText>Seventh Sense</FooterText>
+        <FooterText burgerMenu={burgerMenu}>Seventh Sense</FooterText>
       </YearWrapper>
     </FooterRightsWrapper>
   );
