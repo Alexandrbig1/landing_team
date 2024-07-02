@@ -75,7 +75,7 @@ export default function MenuBurger() {
         <BurgerLogoWrapper>
           <SocialIcons color="#7289d9" />
         </BurgerLogoWrapper>
-        <FooterRightsText burgerMenu={true} />
+        <FooterRightsText burger />
       </BurgerMenuFooterWrapper>
     </Menu>
   );

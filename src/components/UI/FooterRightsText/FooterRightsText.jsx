@@ -8,16 +8,16 @@ import {
 } from "../../Footer/Footer.styled";
 
 // eslint-disable-next-line react/prop-types
-function FooterRightsText({ burgerMenu }) {
+function FooterRightsText({ burger }) {
   return (
     <FooterRightsWrapper>
       <MarkWrapper>
-        <FooterText burgerMenu={burgerMenu}>All Rights Reserved</FooterText>
-        <TradeMark burgerMenu={burgerMenu} />
+        <FooterText $burger={burger}>All Rights Reserved</FooterText>
+        <TradeMark $burger={burger} />
       </MarkWrapper>
-      <YearWrapper burgerMenu={burgerMenu}>
+      <YearWrapper $burger={burger}>
         <Year />
-        <FooterText burgerMenu={burgerMenu}>Seventh Sense</FooterText>
+        <FooterText $burger={burger}>Seventh Sense</FooterText>
       </YearWrapper>
     </FooterRightsWrapper>
   );

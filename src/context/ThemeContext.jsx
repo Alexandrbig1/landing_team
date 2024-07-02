@@ -15,7 +15,7 @@ export const ThemeContext = ({ children }) => {
   };
 
   const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
+    setMenuOpen((prevMenuOpen) => !prevMenuOpen);
   };
 
   return (

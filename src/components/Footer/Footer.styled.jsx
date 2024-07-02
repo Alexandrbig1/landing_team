@@ -57,7 +57,7 @@ export const YearWrapper = styled.div`
   letter-spacing: -0.02em;
   /* color: ${({ theme }) => theme.colors.footerTextColor}; */
   color: ${(p) =>
-    p?.burgerMenu
+    p?.$burger
       ? p.theme.colors.burgerMenuFooterTextColor
       : p.theme.colors.footerTextColor};
   white-space: nowrap;
@@ -65,7 +65,7 @@ export const YearWrapper = styled.div`
 
 export const TradeMark = styled(PiTrademarkRegisteredFill)`
   color: ${(p) =>
-    p?.burgerMenu
+    p?.$burger
       ? p.theme.colors.burgerMenuFooterTextColor
       : p.theme.colors.footerTextColor};
   font-size: 1.6rem;
@@ -78,7 +78,7 @@ export const FooterText = styled.p`
   line-height: 1.3444;
   letter-spacing: -0.02em;
   color: ${(p) =>
-    p?.burgerMenu
+    p?.$burger
       ? p.theme.colors.burgerMenuFooterTextColor
       : p.theme.colors.footerTextColor};
   white-space: nowrap;
