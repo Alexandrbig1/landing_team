@@ -3,6 +3,7 @@ import { useTheme } from "../../context/ThemeContext";
 import FooterRightsText from "../UI/FooterRightsText/FooterRightsText";
 import { v4 as uuidv4 } from "uuid";
 import { motion } from "framer-motion";
+import { LogoImg } from "../Logo/Logo.styled";
 import {
   BurgerContainer,
   CloseBurgerMenu,
@@ -14,6 +15,8 @@ import {
   MenuBurgerItems,
   BurgerMenuFooterWrapper,
   CloseBurgerIcon,
+  CloseBurgerWrapper,
+  LogoImgWrapper,
 } from "./MenuBurger.styled";
 
 // eslint-disable-next-line react/prop-types
@@ -45,13 +48,41 @@ export default function MenuBurger() {
 
   return (
     <Menu $isOpen={menuOpen}>
-      <CloseBurgerMenu
-        type="button"
-        aria-label="Close Menu"
-        onClick={toggleMenu}
-      >
-        <CloseBurgerIcon />
-      </CloseBurgerMenu>
+      <CloseBurgerWrapper>
+        {menuOpen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 1 }}
+          >
+            <LogoImgWrapper>
+              <LogoImg
+                src="logo.png"
+                alt="Seventh Sense logo"
+                title="Seventh Sense Logo"
+                width="36px"
+                height="36px"
+                loading="lazy"
+              />
+            </LogoImgWrapper>
+          </motion.div>
+        )}
+        {menuOpen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 0.75 }}
+          >
+            <CloseBurgerMenu
+              type="button"
+              aria-label="Close Menu"
+              onClick={toggleMenu}
+            >
+              <CloseBurgerIcon />
+            </CloseBurgerMenu>
+          </motion.div>
+        )}
+      </CloseBurgerWrapper>
       <BurgerContainer>
         <nav>
           <BurgerMenuItems>

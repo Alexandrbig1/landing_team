@@ -49,13 +49,36 @@ export const IconMenu = styled(TiThMenu)`
   color: ${(p) => p.theme.colors.whiteColor};
 `;
 
+export const LogoImgWrapper = styled.div`
+  top: -2rem;
+  left: 1.2rem;
+  position: absolute;
+  background-color: ${({ theme }) => theme.colors.whiteColor};
+  border-radius: 50rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const CloseBurgerWrapper = styled.div`
+  width: 100%;
+  max-width: 375px;
+  position: absolute;
+  margin: 0 auto;
+  top: 3.4rem;
+  left: 50%;
+  transform: translateX(-50%);
+`;
+
 export const CloseBurgerMenu = styled.button`
   border: none;
   outline: none;
   background: none;
   color: ${(p) => p.theme.colors.accentLightColor};
-  top: 3.2rem;
-  right: 1.6rem;
+  top: -1.8rem;
+  right: 1rem;
   position: absolute;
   cursor: pointer;
   transition: 0.3s linear;
