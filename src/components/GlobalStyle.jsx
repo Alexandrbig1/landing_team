@@ -7,10 +7,12 @@ export const GlobalStyle = createGlobalStyle`
   --primary-transition: 0.3s ease-in-out;
 }
 
-* {
+*, *::before, *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: ${primaryFont};
+
 }
 
 html {
@@ -20,7 +22,6 @@ html {
 }
 
 body {
-  font-family: ${primaryFont};
   margin: 0 auto;
   scroll-behavior: smooth;
   min-height: 100%;
@@ -51,6 +52,11 @@ a {
   color: inherit;
   cursor: pointer;
 }
+
+img {
+    display: block;
+    max-width: 100%;
+  }
 
 button {
   font-family: inherit;
