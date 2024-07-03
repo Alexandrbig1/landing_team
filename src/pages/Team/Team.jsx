@@ -1,6 +1,6 @@
 import teamData from "../../data/team.json";
 import { motion } from "framer-motion";
-import { Helmet, HelmetProvider } from "react-helmet-async";
+import { Helmet } from "react-helmet-async";
 import { Container } from "../../components/layout";
 import {
   TeamImg,
@@ -22,19 +22,17 @@ import {
 function Team() {
   return (
     <>
-      <HelmetProvider>
-        <Helmet>
-          <title>Seventh Sense - Team Page</title>
-          <meta
-            name="description"
-            content="Meet the Seventh Sense team, a group of dedicated computer science students specializing in software engineering. Learn about our skills, backgrounds, and the innovative work we're doing together."
-          />
-          <meta
-            name="keywords"
-            content="Seventh Sense, team, computer science students, software engineering, team members, collaboration, skills, technology, innovation"
-          />
-        </Helmet>
-      </HelmetProvider>
+      <Helmet>
+        <title>Seventh Sense - Team Page</title>
+        <meta
+          name="description"
+          content="Meet the Seventh Sense team, a group of dedicated computer science students specializing in software engineering. Learn about our skills, backgrounds, and the innovative work we're doing together."
+        />
+        <meta
+          name="keywords"
+          content="Seventh Sense, team, computer science students, software engineering, team members, collaboration, skills, technology, innovation"
+        />
+      </Helmet>
       <Container>
         <TeamWrapper>
           {teamData.map((item, idx) => (

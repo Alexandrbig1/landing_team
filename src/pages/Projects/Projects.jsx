@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Helmet, HelmetProvider } from "react-helmet-async";
+import { Helmet } from "react-helmet-async";
 import { Navigation, Pagination, Keyboard } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -21,19 +21,17 @@ import {
 function Projects() {
   return (
     <>
-      <HelmetProvider>
-        <Helmet>
-          <title>Seventh Sense - Projects Page</title>
-          <meta
-            name="description"
-            content="Explore the innovative projects by Seventh Sense, a team of computer science students specializing in software engineering. Discover our diverse range of projects, from web development to cutting-edge technology solutions."
-          />
-          <meta
-            name="keywords"
-            content="Seventh Sense, projects, computer science, software engineering, web development, technology solutions, student projects, innovation, coding, tech community"
-          />
-        </Helmet>
-      </HelmetProvider>
+      <Helmet>
+        <title>Seventh Sense - Projects Page</title>
+        <meta
+          name="description"
+          content="Explore the innovative projects by Seventh Sense, a team of computer science students specializing in software engineering. Discover our diverse range of projects, from web development to cutting-edge technology solutions."
+        />
+        <meta
+          name="keywords"
+          content="Seventh Sense, projects, computer science, software engineering, web development, technology solutions, student projects, innovation, coding, tech community"
+        />
+      </Helmet>
       <Container>
         <ProjectsContainer>
           <Swiper

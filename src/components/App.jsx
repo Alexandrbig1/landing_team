@@ -6,6 +6,7 @@ import RootLayout from "../layouts/RootLayout";
 import { useTheme } from "../context/ThemeContext";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { HelmetProvider } from "react-helmet-async";
 import {
   Route,
   RouterProvider,
@@ -98,12 +99,14 @@ function App() {
   );
 
   return (
-    <ThemeProvider theme={isDarkTheme ? theme.dark : theme.light}>
-      <GlobalStyle />
-      <FontsHelmet />
-      <ToastContainer />
-      <RouterProvider router={router} />
-    </ThemeProvider>
+    <HelmetProvider>
+      <ThemeProvider theme={isDarkTheme ? theme.dark : theme.light}>
+        <GlobalStyle />
+        <FontsHelmet />
+        <ToastContainer />
+        <RouterProvider router={router} />
+      </ThemeProvider>
+    </HelmetProvider>
   );
 }
 
