@@ -14,6 +14,7 @@ export const LogoWrapper = styled.div`
 export const LogoImg = styled.img`
   width: 3.6rem;
   height: 3.6rem;
+  object-fit: cover;
 `;
 
 export const LogoText = styled.span`
