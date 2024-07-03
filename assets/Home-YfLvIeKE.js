@@ -1,8 +1,8 @@
-import{f as a,p as i,m as n,a as r,F as s,L as c,P as l,j as e,C as d,H as m,b as p}from"./index-CBcMJImm.js";const f=a`
+import{f as a,p as i,m as n,a as r,F as s,L as c,P as l,j as e,C as d,H as m}from"./index-BrZU_QOh.js";const p=a`
   0% { background-position: 0 0; }
   50% { background-position: 400% 0; }
   100% { background-position: 0 0; }
-`,g=i.section`
+`,f=i.section`
   width: 90%;
   height: 80%;
   display: flex;
@@ -33,7 +33,7 @@ import{f as a,p as i,m as n,a as r,F as s,L as c,P as l,j as e,C as d,H as m,b a
     gap: 7.2rem;
     width: 85%;
   }
-`,h=i(n.h1)`
+`,g=i(n.h1)`
   font-size: 7.2rem;
   color: transparent;
   -webkit-text-stroke: 1px #fff;
@@ -47,7 +47,7 @@ import{f as a,p as i,m as n,a as r,F as s,L as c,P as l,j as e,C as d,H as m,b a
   @media (min-width: 768px) {
     font-size: 8.2rem;
   }
-`,u=i(n.span)`
+`,h=i(n.span)`
   color: #f5f5f540;
   position: absolute;
   bottom: -0.6rem;
@@ -58,9 +58,9 @@ import{f as a,p as i,m as n,a as r,F as s,L as c,P as l,j as e,C as d,H as m,b a
     top: 0;
     bottom: unset;
   }
-`,x=i(s)`
+`,u=i(s)`
   font-size: 6.4rem;
-`,w=i.div`
+`,x=i.div`
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -82,14 +82,14 @@ import{f as a,p as i,m as n,a as r,F as s,L as c,P as l,j as e,C as d,H as m,b a
   @media (min-width: 1440px) {
     width: 100%;
   }
-`,b=i.p`
+`,w=i.p`
   font-family: ${r};
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.3444;
   letter-spacing: -0.02em;
   color: ${({theme:t})=>t.colors.whiteColor};
-`,j=i.div`
+`,b=i.div`
   width: 100%;
   max-width: 385px;
   height: auto;
@@ -111,11 +111,11 @@ import{f as a,p as i,m as n,a as r,F as s,L as c,P as l,j as e,C as d,H as m,b a
   @media (min-width: 1440px) {
     width: 100%;
   }
-`,y=i.img`
+`,j=i.img`
   width: 100%;
   height: auto;
   border-radius: 1% 24% 23% 37% / 1% 24% 42% 27%;
-`,v=i(c)`
+`,y=i(c)`
   position: relative;
   border: none;
   background: none;
@@ -158,7 +158,7 @@ import{f as a,p as i,m as n,a as r,F as s,L as c,P as l,j as e,C as d,H as m,b a
     width: calc(100% + 4px);
     height: calc(100% + 4px);
     filter: blur(4px);
-    animation: ${f} 40s linear infinite;
+    animation: ${p} 40s linear infinite;
     transition: all 0.3s ease-in-out;
     border-radius: inherit;
     opacity: 1;
@@ -167,7 +167,7 @@ import{f as a,p as i,m as n,a as r,F as s,L as c,P as l,j as e,C as d,H as m,b a
   &:hover:before {
     animation-play-state: paused;
   }
-`,k=i(l)`
+`,v=i(l)`
   font-size: 2.4rem;
   color: ${t=>t.theme.colors.whiteColor};
-`,o={initial:{},animate:{color:["#f5f5f540","#f5f5f540","#f5f5f540","#f5f5f540","#f5f5f540","#f5f5f540","#f5f5f540","rgba(255, 255, 255, 0)","rgba(255, 255, 255, 0)","rgba(255, 255, 255, 0)","rgba(255, 255, 255, 0)","rgba(255, 255, 255, 0)","rgba(255, 255, 255, 0)","rgba(255, 255, 255, 0)","#f5f5f540","#f5f5f540","#f5f5f540","#f5f5f540","#f5f5f540","rgba(255, 255, 255, 0)","rgba(255, 255, 255, 0)","#f5f5f540","#f5f5f540","rgba(255, 255, 255, 0)","rgba(255, 255, 255, 0)","#f5f5f540","#f5f5f540"],transition:{duration:2,repeat:1/0,repeatType:"mirror",delay:1}}};function H(){return e.jsx(d,{children:e.jsxs(g,{children:[e.jsx(n.div,{initial:{opacity:0,y:100},animate:{opacity:1,y:0},transition:{type:"spring"},children:e.jsxs(w,{children:[e.jsxs(h,{variants:o,initial:"initial",animate:"animate",children:["Seventh Sense",e.jsx(u,{variants:o,initial:"initial",animate:"animate",children:e.jsx(x,{})})]}),e.jsx(b,{children:"is a team of computer science students specializing in software engineering. United by our passion for technology, we collaborate to tackle challenging projects and innovate solutions. As aspiring software engineers, we are dedicated to continuous learning and excellence. Check out our landing page to meet our team, explore our projects, and feel free to contact us!"}),e.jsxs(v,{to:"projects",children:[e.jsx("span",{children:"our projects"}),e.jsx(k,{})]})]})}),e.jsx(n.div,{initial:{opacity:0},animate:{opacity:1},transition:{duration:1.5},children:e.jsx(j,{children:e.jsx("picture",{children:e.jsx(y,{src:"images/hero_desktop.jpg",alt:"Seventh Sense office space"})})})})]})})}function $(){return e.jsxs(e.Fragment,{children:[e.jsx(m,{children:e.jsxs(p,{children:[e.jsx("title",{children:"Seventh Sense - Home Page"}),e.jsx("meta",{name:"description",content:"Seventh Sense is a team of passionate computer science students specializing in software engineering. Explore our projects, meet our team, and discover innovative solutions to today's challenges. Join us in our journey of continuous learning and excellence."}),e.jsx("meta",{name:"keywords",content:"Seventh Sense, computer science, software engineering, student projects, technology, innovation, collaborative projects, coding, tech community, continuous learning"})]})}),e.jsx("div",{children:e.jsx(H,{})})]})}export{$ as default};
+`,o={initial:{},animate:{color:["#f5f5f540","#f5f5f540","#f5f5f540","#f5f5f540","#f5f5f540","#f5f5f540","#f5f5f540","rgba(255, 255, 255, 0)","rgba(255, 255, 255, 0)","rgba(255, 255, 255, 0)","rgba(255, 255, 255, 0)","rgba(255, 255, 255, 0)","rgba(255, 255, 255, 0)","rgba(255, 255, 255, 0)","#f5f5f540","#f5f5f540","#f5f5f540","#f5f5f540","#f5f5f540","rgba(255, 255, 255, 0)","rgba(255, 255, 255, 0)","#f5f5f540","#f5f5f540","rgba(255, 255, 255, 0)","rgba(255, 255, 255, 0)","#f5f5f540","#f5f5f540"],transition:{duration:2,repeat:1/0,repeatType:"mirror",delay:1}}};function k(){return e.jsx(d,{children:e.jsxs(f,{children:[e.jsx(n.div,{initial:{opacity:0,y:100},animate:{opacity:1,y:0},transition:{type:"spring"},children:e.jsxs(x,{children:[e.jsxs(g,{variants:o,initial:"initial",animate:"animate",children:["Seventh Sense",e.jsx(h,{variants:o,initial:"initial",animate:"animate",children:e.jsx(u,{})})]}),e.jsx(w,{children:"is a team of computer science students specializing in software engineering. United by our passion for technology, we collaborate to tackle challenging projects and innovate solutions. As aspiring software engineers, we are dedicated to continuous learning and excellence. Check out our landing page to meet our team, explore our projects, and feel free to contact us!"}),e.jsxs(y,{to:"projects",children:[e.jsx("span",{children:"our projects"}),e.jsx(v,{})]})]})}),e.jsx(n.div,{initial:{opacity:0},animate:{opacity:1},transition:{duration:1.5},children:e.jsx(b,{children:e.jsx("picture",{children:e.jsx(j,{src:"images/hero_desktop.jpg",alt:"Seventh Sense office space"})})})})]})})}function C(){return e.jsxs(e.Fragment,{children:[e.jsxs(m,{children:[e.jsx("title",{children:"Seventh Sense - Home Page"}),e.jsx("meta",{name:"description",content:"Seventh Sense is a team of passionate computer science students specializing in software engineering. Explore our projects, meet our team, and discover innovative solutions to today's challenges. Join us in our journey of continuous learning and excellence."}),e.jsx("meta",{name:"keywords",content:"Seventh Sense, computer science, software engineering, student projects, technology, innovation, collaborative projects, coding, tech community, continuous learning"})]}),e.jsx("div",{children:e.jsx(k,{})})]})}export{C as default};
