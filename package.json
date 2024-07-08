@@ -46,7 +46,10 @@
     "deploy": "gh-pages -d build"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
     "@hookform/resolvers": "^3.6.0",
+    "@mui/material": "^5.16.0",
     "framer-motion": "^11.2.10",
     "gh-pages": "^6.1.1",
     "modern-normalize": "^2.0.0",
