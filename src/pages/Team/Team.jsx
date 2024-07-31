@@ -1,3 +1,4 @@
+import React from "react";
 import teamData from "../../data/team.json";
 import { motion } from "framer-motion";
 import { Helmet } from "react-helmet-async";
@@ -19,7 +20,7 @@ import {
   TeamNameWrapper,
 } from "./Team.styled";
 
-function Team() {
+const Team = React.memo(() => {
   return (
     <>
       <Helmet>
@@ -47,7 +48,10 @@ function Team() {
               }}
             >
               <TeamImgWrapper>
-                <TeamImg src={item?.img} alt={item?.name} />
+                <picture>
+                  <source srcSet={item?.webpImg} type="image/webp" />
+                  <TeamImg src={item?.img} alt={item?.name} loading="lazy" />
+                </picture>
                 <TeamNameWrapper>
                   <TeamName>{item?.name}</TeamName>
                   <TeamProf>{item?.profession}</TeamProf>
@@ -99,6 +103,8 @@ function Team() {
       </Container>
     </>
   );
-}
+});
+
+Team.displayName = "Team";
 
 export default Team;

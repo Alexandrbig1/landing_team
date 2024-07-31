@@ -1,11 +1,10 @@
 import { motion } from "framer-motion";
 import { Container } from "../layout";
+import HeroImgComponent from "./HeroImgComponent";
 import {
   GlitchText,
   HeroBtn,
   HeroBtnIcon,
-  HeroImg,
-  HeroImgWrapper,
   HeroText,
   HeroTitleBulb,
   HeroTitleIcon,
@@ -97,14 +96,7 @@ function Hero() {
           animate={{ opacity: 1 }}
           transition={{ duration: 1.5 }}
         >
-          <HeroImgWrapper>
-            <picture>
-              <HeroImg
-                src="images/hero_desktop.jpg"
-                alt="Seventh Sense office space"
-              />
-            </picture>
-          </HeroImgWrapper>
+          <HeroImgComponent />
         </motion.div>
       </HeroWrapper>
     </Container>

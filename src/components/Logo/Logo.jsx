@@ -12,14 +12,18 @@ function Logo() {
       style={{ display: "flex", alignItems: "center", gap: "12px" }}
     >
       <LogoWrapper>
-        <LogoImg
-          src="logo.png"
-          alt="Seventh Sense logo"
-          title="Seventh Sense Logo"
-          width="36px"
-          height="36px"
-          loading="lazy"
-        />
+        <picture>
+          <source srcSet="logo.webp" type="image/webp" />
+          <LogoImg
+            src="logo.png"
+            alt="Seventh Sense logo"
+            title="Seventh Sense Logo"
+            width="36px"
+            height="36px"
+            loading="lazy"
+            type="image/png"
+          />
+        </picture>
       </LogoWrapper>
       <LogoText>Seventh Sense</LogoText>
     </motion.a>

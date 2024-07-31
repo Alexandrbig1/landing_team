@@ -17,7 +17,8 @@
       "MongoDB",
       "Express"
     ],
-    "img": "images/food.jpg"
+    "img": "images/food.jpg",
+    "webpImg": "images/food.webp"
   },
   {
     "number": 2,
@@ -27,7 +28,8 @@
     "design": "https://www.figma.com/file/1ifqGcQBIzMoc21yIqyV5q/Your-energy?type=design&node-id=205-6586&mode=design&t=M9PaDXqQsAqMNdQS-0",
     "description": "'Your Energy' is a fitness project by the Seventh Sense team aimed at helping you achieve your health goals. Using HTML, CSS, JavaScript, Firebase, Axios, BasicLightbox, and iziToast, this platform offers workout plans, exercise demos, and personalized nutrition advice to support your fitness journey.",
     "stack": ["HTML", "CSS", "JavaScript", "Firebase", "Axios"],
-    "img": "images/fit.jpg"
+    "img": "images/fit.jpg",
+    "webpImg": "images/fit.webp"
   },
   {
     "number": 3,
@@ -37,6 +39,7 @@
     "design": "https://www.figma.com/file/MrdZUmIfeT1bKd8u5GWLRt/English-Excellence-2.0?type=design&node-id=0-1&mode=design",
     "description": "'English Excellence' is a one-page language learning project by the Seventh Sense team. It features theme customization, teacher selection, and personalized assistance to enhance your English proficiency using HTML, CSS, and JavaScript.",
     "stack": ["HTML", "CSS", "JavaScript", "Vite", "Swiper"],
-    "img": "images/eng.jpg"
+    "img": "images/eng.jpg",
+    "webpImg": "images/eng.webp"
   }
 ]

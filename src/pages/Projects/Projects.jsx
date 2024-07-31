@@ -17,8 +17,9 @@ import {
   ProjectsBtnRight,
   ProjectsContainer,
 } from "./Projects.styled";
+import React from "react";
 
-function Projects() {
+const Projects = React.memo(() => {
   return (
     <>
       <Helmet>
@@ -71,6 +72,8 @@ function Projects() {
       </Container>
     </>
   );
-}
+});
+
+Projects.displayName = "Projects";
 
 export default Projects;

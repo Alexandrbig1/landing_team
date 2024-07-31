@@ -102,13 +102,16 @@ function ProjectsCardItem({ items }) {
         </ProjectsIcons>
       </ProjectsCard>
       <ProjectsImgWrapper
-        href={items.url}
+        href={items?.url}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label={`Open ${items.title} website`}
-        title={`Open ${items.title} website`}
+        aria-label={`Open ${items?.title} website`}
+        title={`Open ${items?.title} website`}
       >
-        <ProjectsImage src={items.img} alt={items.title} />
+        <picture>
+          <source srcSet={items?.webpImg} type="image/webp" />
+          <ProjectsImage src={items?.img} alt={items?.title} loading="lazy" />
+        </picture>
       </ProjectsImgWrapper>
     </ProjectsCardWrapper>
   );

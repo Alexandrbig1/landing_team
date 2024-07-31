@@ -37,7 +37,15 @@ function SocialIcons({ color }) {
           aria-label="Visit Woolf University website"
           title="Visit Woolf University website"
         >
-          <WoolfImg src="woolf.png" alt="woolf university logo" />
+          <picture>
+            <source srcSet="woolf.webp" type="image/webp" />
+            <WoolfImg
+              src="woolf.png"
+              alt="woolf university logo"
+              type="image/png"
+              loading="lazy"
+            />
+          </picture>
         </Link>
       </motion.div>
     </SocialLinksWrapper>
